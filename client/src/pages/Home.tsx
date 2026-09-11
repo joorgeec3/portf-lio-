@@ -20,7 +20,15 @@ import {
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
-const WHATSAPP_URL = "https://wa.me/5575999445156";
+const WHATSAPP_MESSAGE = "Olá! Quero explicar minha ideia para criar um site, sistema ou aplicativo. Podemos conversar?";
+const WHATSAPP_URL = `https://wa.me/5575999445156?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+const LANGUAGE_OPTIONS = [
+  { value: "pt-BR", label: "Português" },
+  { value: "pt-PT", label: "Português de Portugal" },
+  { value: "en", label: "Inglês" },
+  { value: "fr", label: "Francês" },
+  { value: "de", label: "Alemão" },
+];
 
 const projectData = [
   {
@@ -145,6 +153,7 @@ export default function Home() {
   const touchStart = useRef<{ x: number; y: number } | null>(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [language, setLanguage] = useState("pt-BR");
 
   useEffect(() => {
     const onScroll = () => setShowBackToTop(window.scrollY > 520);
@@ -152,6 +161,10 @@ export default function Home() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -206,6 +219,12 @@ export default function Home() {
           <a href="#como-funciona">Como funciona</a>
           <a href="#contato">Contato</a>
         </nav>
+        <label className="language-picker">
+          <span className="sr-only">Escolher idioma</span>
+          <select value={language} onChange={(event) => setLanguage(event.target.value)} aria-label="Escolher idioma">
+            {LANGUAGE_OPTIONS.map((option) => <option key={option.value} value={option.value}>{option.label}</option>)}
+          </select>
+        </label>
         <a className="header-contact" href={WHATSAPP_URL} target="_blank" rel="noreferrer">
           <span>Vamos conversar</span>
           <ArrowUpRight aria-hidden="true" />
@@ -304,6 +323,10 @@ export default function Home() {
               Sites, sistemas e aplicativos com <strong>presença, performance e precisão.</strong>
             </p>
             <div className="hero-actions">
+              <a className="hero-services-cta" href="#especialidades">
+                <span>Ver serviços</span>
+                <ArrowDownRight aria-hidden="true" />
+              </a>
               <a className="hero-projects-cta" href="#projetos">
                 <span>Ver meus projetos</span>
                 <ArrowDownRight aria-hidden="true" />

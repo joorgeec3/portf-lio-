@@ -9,6 +9,11 @@ const homeSource = readFileSync(resolve(process.cwd(), "client/src/pages/Home.ts
     expect(homeSource).toContain("SITES • SISTEMAS • APLICATIVOS");
     expect(homeSource).toContain("Atendimento online para clientes no Brasil e em qualquer lugar do mundo.");
     expect(homeSource).toContain("Contar minha ideia");
+    expect(homeSource).toContain("WHATSAPP_MESSAGE");
+    expect(homeSource).toContain("Português de Portugal");
+    expect(homeSource).toContain("Francês");
+    expect(homeSource).toContain("Alemão");
+    expect(homeSource).toContain("Ver serviços");
     expect(homeSource).toContain("Ver referências");
     expect(homeSource).toContain('href="#depoimento"');
     expect(homeSource).toContain('href="#como-funciona"');
@@ -17,7 +22,7 @@ const homeSource = readFileSync(resolve(process.cwd(), "client/src/pages/Home.ts
     expect(homeSource).toContain("Explicar minha ideia no WhatsApp");
     expect(homeSource).toContain("Cibelly Studio");
     expect(homeSource).toContain("https://cibellystudi-dxsgadjg.manus.space");
-    expect(homeSource).toContain("cibelly-cover-hero_180f30b5.webp");
+    expect(homeSource).toContain("cibelly-cover-hero.webp");
     expect(homeSource).toContain("Ver projeto");
     expect(homeSource).toContain("Criação de Sites Portfólio");
     expect(homeSource).toContain("Gestor de tráfego");
@@ -27,11 +32,12 @@ const homeSource = readFileSync(resolve(process.cwd(), "client/src/pages/Home.ts
 
   it("mantém a referência real e não exibe instruções antigas de interação", () => {
     expect(homeSource).toContain("Estou muito feliz com seu trabalho");
-    expect(homeSource).toContain("IMG_4264_1c9561a9.PNG");
-    expect(homeSource).toContain("IMG_4525_41182833.PNG");
+    expect(homeSource).toContain("IMG_4264.PNG");
+    expect(homeSource).toContain("IMG_4525.PNG");
     expect(homeSource).toContain("Dani Caye Beauty");
     expect(homeSource).toContain("Cibelly Studio");
     expect(homeSource).toContain("mobile-navigation");
+    expect(homeSource).toContain("language-picker");
     expect(homeSource).not.toMatch(/MOVA PARA INTERAGIR|DESLIZE PARA MOVIMENTAR|LIVE PROJECT/i);
   });
 });

@@ -24,3 +24,7 @@ A hospedagem nativa do Manus continua sendo a opção mais direta para esta vers
 ## Validação adicional
 
 O comando `pnpm build` concluiu e `vite preview` respondeu localmente com o título NEXCODE. A URL temporária de exposição do sandbox pode mostrar indisponibilidade mesmo quando o processo local está saudável; esse proxy não faz parte do deploy Vercel. A validação confiável foi feita via HTTP local, incluindo o HTML, o avatar, a capa Cibelly e a varredura do bundle sem `manus-storage`, `Made with Manus` ou `VITE_ANALYTICS`.
+
+## Ajustes finais desta versão
+
+O topo agora inclui um seletor de idioma com Português, Português de Portugal, Inglês, Francês e Alemão. O hero ganhou o CTA “Ver serviços”. Os links de WhatsApp e “Contar minha ideia” abrem uma conversa com uma mensagem inicial pronta, que o cliente só precisa enviar ou editar. No mobile, a faixa do hero foi ampliada e a frase inferior foi reposicionada depois do personagem e da assinatura, antes dos botões, para evitar sobreposição.
