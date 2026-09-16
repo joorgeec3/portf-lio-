@@ -69,11 +69,11 @@ const COPY: Record<LanguageCode, Copy> = {
 };
 
 const WHATSAPP_MESSAGES: Record<LanguageCode, string> = {
-  "pt-BR": "Olá! Quero explicar minha ideia para criar um site, sistema ou aplicativo. Podemos conversar?",
-  "pt-PT": "Olá! Quero explicar a minha ideia para criar um site, sistema ou aplicação. Podemos conversar?",
-  en: "Hello! I would like to explain my idea for a website, system or app. Can we talk?",
-  fr: "Bonjour ! Je voudrais expliquer mon idée pour un site, un système ou une application. Pouvons-nous discuter ?",
-  de: "Hallo! Ich möchte meine Idee für eine Website, ein System oder eine App erklären. Können wir sprechen?",
+  "pt-BR": "🇧🇷 Olá! Gostaria de saber mais sobre seus serviços de criação de sites, sistemas e aplicativos. Podemos conversar?\n\n🇺🇸 Hello! I'd like to know more about your website, system, and app development services. Can we talk?",
+  "pt-PT": "🇧🇷 Olá! Gostaria de saber mais sobre seus serviços de criação de sites, sistemas e aplicativos. Podemos conversar?\n\n🇺🇸 Hello! I'd like to know more about your website, system, and app development services. Can we talk?",
+  en: "🇧🇷 Olá! Gostaria de saber mais sobre seus serviços de criação de sites, sistemas e aplicativos. Podemos conversar?\n\n🇺🇸 Hello! I'd like to know more about your website, system, and app development services. Can we talk?",
+  fr: "🇧🇷 Olá! Gostaria de saber mais sobre seus serviços de criação de sites, sistemas e aplicativos. Podemos conversar?\n\n🇺🇸 Hello! I'd like to know more about your website, system, and app development services. Can we talk?",
+  de: "🇧🇷 Olá! Gostaria de saber mais sobre seus serviços de criação de sites, sistemas e aplicativos. Podemos conversar?\n\n🇺🇸 Hello! I'd like to know more about your website, system, and app development services. Can we talk?",
 };
 
 const projectData = [
@@ -165,7 +165,7 @@ export default function Home() {
   });
   const copy = COPY[language];
   const t = (key: string) => copy[key] ?? key;
-  const whatsappUrl = `https://wa.me/5575999445156?text=${encodeURIComponent(WHATSAPP_MESSAGES[language])}`;
+  const whatsappUrl = `https://wa.me/5575981891779?text=${encodeURIComponent(WHATSAPP_MESSAGES[language])}`;
   const localizedProjects = projectData.map((project) => ({
     ...project,
     category: t(project.categoryKey),
