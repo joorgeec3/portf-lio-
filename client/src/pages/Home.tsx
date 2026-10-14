@@ -32,6 +32,25 @@ type Copy = Record<string, string>;
 
 const COPY: Record<LanguageCode, Copy> = {
   "pt-BR": {
+    project4Category: "Site de estética e cursos",
+    project4Desc: "Website com páginas de tratamentos, cursos e agendamentos, criado para a Bella Beauty Brazil em Brisbane.",
+    project5Category: "Website para clínica de estética",
+    project5Desc: "Prévia digital para apresentar os tratamentos, valorizar a clínica e facilitar o contato.",
+    project6Category: "Site de saúde integrativa",
+    project6Desc: "Website da ALL Integrative para acompanhamento farmacêutico, serviços e jornada de atendimento.",
+    project7Category: "Site de estética e bem-estar",
+    project7Desc: "Site do Studio Mariane Brito, em Lisboa, com massagens, tratamentos e informações de agendamento.",
+    project8Category: "Plataforma de turismo e reservas",
+    project8Desc: "Projeto InslandTour de destinos, passeios, transportes e experiências em Morro de São Paulo e Boipeba.",
+    project9Category: "Sistema de gestão e CRM",
+    project9Desc: "Plataforma de CRM e finanças para diferentes nichos, em desenvolvimento por etapas.",
+    projectPreview: "PRÉVIA ONLINE",
+    projectCode: "PROJETO NO GITHUB",
+    projectInDev: "EM DESENVOLVIMENTO",
+    viewDetails: "Ver detalhes",
+    closeDetails: "Fechar detalhes",
+    repoNoLink: "Projeto documentado no GitHub. Não há uma demonstração pública confirmada para abrir aqui.",
+    projectsIntro: "Explore os projetos, conheça cada solução e abra os sites que têm versão pública.",
     navServices: "Serviços", navProjects: "Projetos", navFeedback: "Depoimento", navProcess: "Como funciona", navContact: "Contato",
     chooseLanguage: "Escolher idioma", letsTalk: "Vamos conversar", openMenu: "Abrir menu", closeMenu: "Fechar menu", mobileReferences: "Referências",
     heroKicker: "SITES • SISTEMAS • APLICATIVOS", heroWord1: "DIGITAL", heroWord2: "PARA", heroWord3: "SER LEMBRADO.",
@@ -52,18 +71,94 @@ const COPY: Record<LanguageCode, Copy> = {
     contactEyebrow: "SE A IDEIA IMPORTA, O ACABAMENTO TAMBÉM.", contactTitle: "Vamos criar algo que a sua marca vai querer assinar.", contactDesc: "Você não precisa chegar com tudo definido. Conte-me sobre o seu negócio e eu ajudo a transformar sua ideia em uma solução profissional.", contactCta: "Explicar minha ideia no WhatsApp", footerServices: "Sites · Sistemas · Aplicativos", footerBuilt: "Construído com precisão.", brandAlt: "Símbolo geométrico da marca", avatarAlt: "Cabeça 3D estilizada do desenvolvedor", contactAlt: "Escultura abstrata de anéis interligados", maraAlt: "Captura de tela de uma conversa de WhatsApp com a cliente Mara Hair", daniAlt: "Captura de tela de uma conversa de WhatsApp com a cliente Dani Caye Beauty, incluindo o link do projeto e mensagens de feedback", cibellyAlt: "Captura de tela de mensagens de voz e feedback da cliente Cibelly sobre o projeto entregue",
   },
   "pt-PT": {
+    project4Category: "Site de estética e formação",
+    project4Desc: "Website com páginas de tratamentos, formação e marcações para a Bella Beauty Brazil, em Brisbane.",
+    project5Category: "Website para clínica de estética",
+    project5Desc: "Pré-visualização digital dos tratamentos e formas de contacto da clínica.",
+    project6Category: "Site de saúde integrativa",
+    project6Desc: "Website da ALL Integrative sobre acompanhamento farmacêutico, serviços e percurso do utente.",
+    project7Category: "Site de estética e bem-estar",
+    project7Desc: "Site do Studio Mariane Brito, em Lisboa, com massagens, tratamentos e informações para marcações.",
+    project8Category: "Plataforma de turismo e reservas",
+    project8Desc: "Projeto InslandTour com destinos, passeios e transportes em Morro de São Paulo e Boipeba.",
+    project9Category: "Sistema de gestão e CRM",
+    project9Desc: "Plataforma de CRM e finanças multissetorial, em desenvolvimento por etapas.",
+    projectPreview: "PRÉ-VISUALIZAÇÃO ONLINE",
+    projectCode: "PROJETO NO GITHUB",
+    projectInDev: "EM DESENVOLVIMENTO",
+    viewDetails: "Ver detalhes",
+    closeDetails: "Fechar detalhes",
+    repoNoLink: "Projeto documentado no GitHub. Ainda não existe demonstração pública confirmada.",
+    projectsIntro: "Explore os projetos e abra os sites quando existir uma versão pública.",
     navServices: "Serviços", navProjects: "Projetos", navFeedback: "Testemunho", navProcess: "Como funciona", navContact: "Contacto", chooseLanguage: "Escolher idioma", letsTalk: "Vamos conversar", openMenu: "Abrir menu", closeMenu: "Fechar menu", mobileReferences: "Referências",
     heroKicker: "SITES • SISTEMAS • APLICAÇÕES", heroWord1: "DIGITAL", heroWord2: "PARA", heroWord3: "SER LEMBRADO.", heroIntro: "Crio sites, sistemas e aplicações à medida, sem complicações. Explica-me a sua ideia e trato de todo o processo até à entrega.", heroOnline: "Atendimento online para clientes no Brasil e em qualquer parte do mundo.", heroSignature: "NEXCODE SYSTEMS", heroBottom: "Sites, sistemas e aplicações com", heroBottomStrong: "presença, desempenho e precisão.", ctaServices: "Ver serviços", ctaProjects: "Ver os meus projetos", ctaReferences: "Ver referências", ctaIdea: "Contar-me a sua ideia",
     railPortfolio: "PORTFÓLIO", railWhat: "O QUE FAÇO", railProcess: "COMO FUNCIONA", railSelection: "SELEÇÃO", railFeedback: "TESTEMUNHO", railQuestions: "DÚVIDAS", railContact: "CONTACTO", presenceEyebrow: "PRESENÇA QUE FUNCIONA", introTitle: "Design e código para negócios que não querem passar despercebidos.", introStatement: "Cada projeto começa com um objetivo claro e termina numa experiência natural para quem utiliza — e impossível de ignorar para quem vê.", specialty1Title: "Sites e presença digital", specialty1Desc: "Para apresentar a sua marca, os seus serviços e os seus produtos de forma clara e profissional.", specialty1a: "Criação de Sites Portfólio", specialty1b: "Criação de E-Commerce", specialty1c: "Criação de Menu Digital", specialty1d: "Criação de Loja Online", specialty2Title: "Automação e ligações", specialty2Desc: "Para aproximar clientes, reduzir tarefas repetitivas e ligar as ferramentas do seu negócio.", specialty2a: "Gestão de tráfego", specialty2b: "Automação (WhatsApp, Telegram)", specialty2c: "Integração de API", specialty3Title: "Gestão e sistemas", specialty3Desc: "Ferramentas para acompanhar números, organizar processos e tomar decisões com mais clareza.", specialty3a: "Painel de Gestão Financeira Empresarial", specialty3b: "Dashboard Administrativo e de Gestão", specialty3c: "Sistemas e aplicações à medida",
     processEyebrow: "SEM COMPLICAÇÕES", processTitle: "DA SUA IDEIA AO PROJETO PRONTO.", step1Title: "Conta a sua ideia", step1Desc: "Explica o que precisa, mesmo que ainda esteja no início.", step2Title: "Organizo o projeto", step2Desc: "Transformo a sua ideia num caminho claro para tirar tudo do papel.", step3Title: "Acompanha", step3Desc: "Acompanha cada etapa e participa nas decisões importantes.", step4Title: "Tudo pronto", step4Desc: "Recebe a solução a funcionar e pronta a utilizar.", selectionEyebrow: "PROJETOS SELECIONADOS", projectsTitle: "Veja projetos reais sem complicações.", projectsIntro: "Escolha um projeto, veja o resultado e abra o site quando quiser.", projectLive: "PROJETO ONLINE", viewProject: "Ver projeto", project1Category: "Site profissional", project1Desc: "Site simples para apresentar o salão, divulgar os serviços e facilitar o contacto com novas clientes.", project2Category: "Site personalizado", project2Desc: "Site claro e elegante para apresentar serviços, portfólio e caminhos simples para novas reservas.", project3Category: "Site de beleza e atendimento", project3Desc: "Experiência premium para apresentar serviços, reforçar a marca e facilitar o agendamento online.", realReference: "REFERÊNCIA REAL · MARA HAIR", feedbackTitle: "O que uma cliente disse depois de receber o projeto.", quote: "“Estou muito feliz com o seu trabalho”", maraCaption: "Mensagem recebida depois da entrega · Mara Hair", daniCaption: "Feedback visual do projeto · Dani Caye Beauty", cibellyCaption: "Feedback visual do projeto · Cibelly Studio", questionsEyebrow: "ANTES DE COMEÇAR", faqTitle: "Dúvidas comuns, respostas simples.", faq1q: "Preciso de perceber de tecnologia?", faq1a: "Não. Só precisa de explicar o que pretende; eu trato da parte técnica.", faq2q: "Preciso de ter textos e imagens prontos?", faq2a: "Não necessariamente. Podemos organizar o que já existe e definir juntos o que falta.", faq3q: "Como funciona o acompanhamento?", faq3a: "Acompanha cada etapa com explicações claras e aprova as decisões importantes.", faq4q: "Atende outros países?", faq4a: "Sim. O atendimento é online para clientes no Brasil e em qualquer parte do mundo.", faq5q: "Como funciona o orçamento?", faq5a: "Conta a sua ideia e preparo uma proposta clara e personalizada.", contactEyebrow: "SE A IDEIA IMPORTA, O ACABAMENTO TAMBÉM.", contactTitle: "Vamos criar algo que a sua marca vai querer assinar.", contactDesc: "Não precisa de chegar com tudo definido. Fale-me do seu negócio e ajudo a transformar a sua ideia numa solução profissional.", contactCta: "Explicar a minha ideia no WhatsApp", footerServices: "Sites · Sistemas · Aplicações", footerBuilt: "Construído com precisão.", brandAlt: "Símbolo geométrico da marca", avatarAlt: "Cabeça 3D estilizada do programador", contactAlt: "Escultura abstrata de anéis interligados", maraAlt: "Captura de uma conversa de WhatsApp com a cliente Mara Hair", daniAlt: "Captura de uma conversa de WhatsApp com a cliente Dani Caye Beauty", cibellyAlt: "Captura de mensagens de voz e feedback da cliente Cibelly",
   },
   en: {
+    project4Category: "Beauty and training website",
+    project4Desc: "Website for Bella Beauty Brazil in Brisbane, featuring services, courses and bookings.",
+    project5Category: "Beauty clinic website",
+    project5Desc: "Online preview of a digital experience for a beauty clinic, featuring treatments and contact options.",
+    project6Category: "Integrative healthcare website",
+    project6Desc: "ALL Integrative website featuring pharmaceutical care, services and patient support.",
+    project7Category: "Beauty and wellness website",
+    project7Desc: "Studio Mariane Brito website in Lisbon, with massages, treatments and booking information.",
+    project8Category: "Tourism and booking platform",
+    project8Desc: "InslandTour project featuring destinations, trips and transport in Morro de São Paulo and Boipeba.",
+    project9Category: "Management and CRM system",
+    project9Desc: "Multi-industry CRM and financial management platform, currently under development.",
+    projectPreview: "ONLINE PREVIEW",
+    projectCode: "GITHUB PROJECT",
+    projectInDev: "IN DEVELOPMENT",
+    viewDetails: "View details",
+    closeDetails: "Close details",
+    repoNoLink: "This project is documented on GitHub. No verified public demo is available yet.",
+    projectsIntro: "Explore each project and open the websites with a public version.",
     navServices: "Services", navProjects: "Projects", navFeedback: "Testimonial", navProcess: "How it works", navContact: "Contact", chooseLanguage: "Choose language", letsTalk: "Let's talk", openMenu: "Open menu", closeMenu: "Close menu", mobileReferences: "References", heroKicker: "WEBSITES • SYSTEMS • APPS", heroWord1: "DIGITAL", heroWord2: "TO BE", heroWord3: "REMEMBERED.", heroIntro: "I create custom websites, systems and apps without complications. You share your idea and I take care of the whole process until delivery.", heroOnline: "Online service for clients in Brazil and anywhere in the world.", heroSignature: "NEXCODE SYSTEMS", heroBottom: "Websites, systems and apps with", heroBottomStrong: "presence, performance and precision.", ctaServices: "View services", ctaProjects: "View my projects", ctaReferences: "View testimonials", ctaIdea: "Share my idea", railPortfolio: "PORTFOLIO", railWhat: "WHAT I DO", railProcess: "HOW IT WORKS", railSelection: "SELECTION", railFeedback: "TESTIMONIAL", railQuestions: "QUESTIONS", railContact: "CONTACT", presenceEyebrow: "PRESENCE THAT WORKS", introTitle: "Design and code for businesses that refuse to go unnoticed.", introStatement: "Every project starts with a clear goal and ends in an experience that feels natural to use — and impossible to ignore.", specialty1Title: "Websites and digital presence", specialty1Desc: "To present your brand, services and products clearly and professionally.", specialty1a: "Portfolio Website Creation", specialty1b: "E-Commerce Creation", specialty1c: "Digital Menu Creation", specialty1d: "Online Store Creation", specialty2Title: "Automation and connections", specialty2Desc: "To get closer to customers, reduce repetitive tasks and connect your business tools.", specialty2a: "Traffic management", specialty2b: "Automation (WhatsApp, Telegram)", specialty2c: "API integration", specialty3Title: "Management and systems", specialty3Desc: "Tools to track numbers, organize processes and make clearer decisions.", specialty3a: "Business Financial Management Panel", specialty3b: "Administrative and Management Dashboard", specialty3c: "Custom systems and apps", processEyebrow: "NO COMPLICATIONS", processTitle: "FROM YOUR IDEA TO A READY PROJECT.", step1Title: "You share your idea", step1Desc: "Explain what you need, even if you are just getting started.", step2Title: "I organize the project", step2Desc: "I turn your idea into a clear path to bring it to life.", step3Title: "You follow along", step3Desc: "You follow each stage and take part in the important decisions.", step4Title: "Everything ready", step4Desc: "You receive a working solution ready to use.", selectionEyebrow: "SELECTED PROJECTS", projectsTitle: "See real projects without the hassle.", projectsIntro: "Choose a project, see the result and open the website whenever you want.", projectLive: "LIVE PROJECT", viewProject: "View project", project1Category: "Professional website", project1Desc: "A simple website to present the salon, promote its services and make it easier for new clients to get in touch.", project2Category: "Custom website", project2Desc: "A clear, elegant website to present services, portfolio and simple paths to new bookings.", project3Category: "Beauty and booking website", project3Desc: "A premium experience to present services, strengthen the brand and make online booking easier.", realReference: "REAL TESTIMONIAL · MARA HAIR", feedbackTitle: "What a client said after receiving the project.", quote: "“I am very happy with your work”", maraCaption: "Message received after delivery · Mara Hair", daniCaption: "Project feedback · Dani Caye Beauty", cibellyCaption: "Project feedback · Cibelly Studio", questionsEyebrow: "BEFORE WE START", faqTitle: "Common questions, simple answers.", faq1q: "Do I need to understand technology?", faq1a: "No. You only need to explain what you want; I take care of the technical side.", faq2q: "Do I need to have text and images ready?", faq2a: "Not necessarily. We can organize what already exists and define what is still missing together.", faq3q: "How does the follow-up work?", faq3a: "You follow every stage with clear explanations and approve the important decisions.", faq4q: "Do you serve other countries?", faq4a: "Yes. I work online with clients in Brazil and anywhere in the world.", faq5q: "How does the quote work?", faq5a: "You share your idea and I prepare a clear, personalized proposal.", contactEyebrow: "WHEN THE IDEA MATTERS, SO DOES THE FINISH.", contactTitle: "Let's create something your brand will be proud to sign.", contactDesc: "You do not need to arrive with everything defined. Tell me about your business and I will help turn your idea into a professional solution.", contactCta: "Explain my idea on WhatsApp", footerServices: "Websites · Systems · Apps", footerBuilt: "Built with precision.", brandAlt: "Geometric brand symbol", avatarAlt: "Stylized 3D developer head", contactAlt: "Abstract sculpture of interlocking rings", maraAlt: "WhatsApp conversation screenshot with Mara Hair", daniAlt: "WhatsApp conversation screenshot with Dani Caye Beauty", cibellyAlt: "Voice messages and feedback screenshot from Cibelly",
   },
   fr: {
+    project4Category: "Site beauté et formation",
+    project4Desc: "Site Bella Beauty Brazil à Brisbane avec prestations, formations et réservations.",
+    project5Category: "Site de clinique esthétique",
+    project5Desc: "Aperçu d'une expérience numérique présentant les soins et les moyens de contact.",
+    project6Category: "Site de santé intégrative",
+    project6Desc: "Site ALL Integrative consacré au suivi pharmaceutique, aux services et à l'accompagnement.",
+    project7Category: "Site beauté et bien-être",
+    project7Desc: "Site du Studio Mariane Brito à Lisbonne, avec massages, soins et réservations.",
+    project8Category: "Plateforme de tourisme et réservations",
+    project8Desc: "Projet InslandTour de destinations et excursions à Morro de São Paulo et Boipeba.",
+    project9Category: "Système de gestion et CRM",
+    project9Desc: "Plateforme multi-activité de gestion des clients et des finances, en développement.",
+    projectPreview: "APERÇU EN LIGNE",
+    projectCode: "PROJET SUR GITHUB",
+    projectInDev: "EN DÉVELOPPEMENT",
+    viewDetails: "Voir les détails",
+    closeDetails: "Fermer",
+    repoNoLink: "Projet documenté sur GitHub. Aucune démonstration publique vérifiée n'est encore disponible.",
+    projectsIntro: "Découvrez chaque projet et ouvrez les sites ayant une version publique.",
     navServices: "Services", navProjects: "Projets", navFeedback: "Témoignage", navProcess: "Comment ça marche", navContact: "Contact", chooseLanguage: "Choisir la langue", letsTalk: "Parlons-en", openMenu: "Ouvrir le menu", closeMenu: "Fermer le menu", mobileReferences: "Références", heroKicker: "SITES • SYSTÈMES • APPLICATIONS", heroWord1: "DIGITAL", heroWord2: "À", heroWord3: "RETENIR.", heroIntro: "Je crée des sites, des systèmes et des applications sur mesure, sans complication. Vous expliquez votre idée et je m'occupe de tout jusqu'à la livraison.", heroOnline: "Service en ligne pour les clients au Brésil et partout dans le monde.", heroSignature: "NEXCODE SYSTEMS", heroBottom: "Des sites, systèmes et applications avec", heroBottomStrong: "présence, performance et précision.", ctaServices: "Voir les services", ctaProjects: "Voir mes projets", ctaReferences: "Voir les témoignages", ctaIdea: "Partager mon idée", railPortfolio: "PORTFOLIO", railWhat: "CE QUE JE FAIS", railProcess: "COMMENT ÇA MARCHE", railSelection: "SÉLECTION", railFeedback: "TÉMOIGNAGE", railQuestions: "QUESTIONS", railContact: "CONTACT", presenceEyebrow: "UNE PRÉSENCE QUI FONCTIONNE", introTitle: "Design et code pour les entreprises qui refusent de passer inaperçues.", introStatement: "Chaque projet commence par un objectif clair et se termine par une expérience naturelle à utiliser — et impossible à ignorer.", specialty1Title: "Sites et présence numérique", specialty1Desc: "Pour présenter votre marque, vos services et vos produits de façon claire et professionnelle.", specialty1a: "Création de site portfolio", specialty1b: "Création d'e-commerce", specialty1c: "Création de menu digital", specialty1d: "Création de boutique en ligne", specialty2Title: "Automatisation et connexions", specialty2Desc: "Pour rapprocher les clients, réduire les tâches répétitives et connecter vos outils.", specialty2a: "Gestion du trafic", specialty2b: "Automatisation (WhatsApp, Telegram)", specialty2c: "Intégration API", specialty3Title: "Gestion et systèmes", specialty3Desc: "Des outils pour suivre les chiffres, organiser les processus et décider plus clairement.", specialty3a: "Panneau de gestion financière", specialty3b: "Tableau de bord administratif et de gestion", specialty3c: "Systèmes et applications sur mesure", processEyebrow: "SANS COMPLICATION", processTitle: "DE VOTRE IDÉE AU PROJET PRÊT.", step1Title: "Vous expliquez votre idée", step1Desc: "Dites ce dont vous avez besoin, même si vous débutez.", step2Title: "J'organise le projet", step2Desc: "Je transforme votre idée en un chemin clair pour la réaliser.", step3Title: "Vous suivez l'avancement", step3Desc: "Vous suivez chaque étape et participez aux décisions importantes.", step4Title: "Tout est prêt", step4Desc: "Vous recevez une solution fonctionnelle, prête à l'emploi.", selectionEyebrow: "PROJETS SÉLECTIONNÉS", projectsTitle: "Découvrez de vrais projets, simplement.", projectsIntro: "Choisissez un projet, voyez le résultat et ouvrez le site quand vous le souhaitez.", projectLive: "PROJET EN LIGNE", viewProject: "Voir le projet", project1Category: "Site professionnel", project1Desc: "Un site simple pour présenter le salon, ses services et faciliter le contact avec de nouvelles clientes.", project2Category: "Site personnalisé", project2Desc: "Un site clair et élégant pour présenter les services, le portfolio et faciliter les réservations.", project3Category: "Site beauté et réservation", project3Desc: "Une expérience premium pour présenter les services, renforcer la marque et faciliter les rendez-vous en ligne.", realReference: "TÉMOIGNAGE RÉEL · MARA HAIR", feedbackTitle: "Ce qu'une cliente a dit après avoir reçu le projet.", quote: "« Je suis très heureuse de votre travail »", maraCaption: "Message reçu après la livraison · Mara Hair", daniCaption: "Retour sur le projet · Dani Caye Beauty", cibellyCaption: "Retour sur le projet · Cibelly Studio", questionsEyebrow: "AVANT DE COMMENCER", faqTitle: "Questions fréquentes, réponses simples.", faq1q: "Dois-je comprendre la technologie ?", faq1a: "Non. Il suffit d'expliquer ce que vous souhaitez ; je m'occupe de la partie technique.", faq2q: "Dois-je avoir les textes et les images prêts ?", faq2a: "Pas forcément. Nous pouvons organiser ce qui existe déjà et définir ensemble ce qui manque.", faq3q: "Comment se passe le suivi ?", faq3a: "Vous suivez chaque étape avec des explications claires et validez les décisions importantes.", faq4q: "Travaillez-vous avec d'autres pays ?", faq4a: "Oui. Je travaille en ligne avec des clients au Brésil et partout dans le monde.", faq5q: "Comment fonctionne le devis ?", faq5a: "Vous partagez votre idée et je prépare une proposition claire et personnalisée.", contactEyebrow: "QUAND L'IDÉE COMPTE, LA FINITION AUSSI.", contactTitle: "Créons quelque chose que votre marque sera fière de signer.", contactDesc: "Vous n'avez pas besoin d'arriver avec tout défini. Parlez-moi de votre activité et je vous aide à transformer votre idée en solution professionnelle.", contactCta: "Expliquer mon idée sur WhatsApp", footerServices: "Sites · Systèmes · Applications", footerBuilt: "Construit avec précision.", brandAlt: "Symbole géométrique de la marque", avatarAlt: "Tête 3D stylisée du développeur", contactAlt: "Sculpture abstraite d'anneaux entrelacés", maraAlt: "Capture d'une conversation WhatsApp avec Mara Hair", daniAlt: "Capture d'une conversation WhatsApp avec Dani Caye Beauty", cibellyAlt: "Capture de messages vocaux et de retours de Cibelly",
   },
   de: {
+    project4Category: "Beauty- und Schulungswebsite",
+    project4Desc: "Website für Bella Beauty Brazil in Brisbane mit Behandlungen, Kursen und Buchungen.",
+    project5Category: "Website für Ästhetikklinik",
+    project5Desc: "Online-Vorschau mit Leistungen der Klinik und Kontaktmöglichkeiten.",
+    project6Category: "Website für integrative Gesundheit",
+    project6Desc: "ALL Integrative Website für pharmazeutische Begleitung, Leistungen und Betreuung.",
+    project7Category: "Beauty- und Wellnesswebsite",
+    project7Desc: "Website des Studio Mariane Brito in Lissabon mit Massagen, Behandlungen und Buchungsinfos.",
+    project8Category: "Tourismus- und Buchungsplattform",
+    project8Desc: "InslandTour Projekt mit Ausflügen, Transport und Reisezielen rund um Morro de São Paulo und Boipeba.",
+    project9Category: "Management- und CRM-System",
+    project9Desc: "Branchenübergreifende Plattform für CRM und Finanzen, derzeit in Entwicklung.",
+    projectPreview: "ONLINE-VORSCHAU",
+    projectCode: "GITHUB-PROJEKT",
+    projectInDev: "IN ENTWICKLUNG",
+    viewDetails: "Details ansehen",
+    closeDetails: "Schließen",
+    repoNoLink: "Dieses Projekt ist auf GitHub dokumentiert. Es gibt noch keine bestätigte öffentliche Demo.",
+    projectsIntro: "Entdecken Sie die Projekte und öffnen Sie öffentlich verfügbare Websites.",
     navServices: "Leistungen", navProjects: "Projekte", navFeedback: "Kundenstimme", navProcess: "So funktioniert es", navContact: "Kontakt", chooseLanguage: "Sprache wählen", letsTalk: "Lass uns sprechen", openMenu: "Menü öffnen", closeMenu: "Menü schließen", mobileReferences: "Referenzen", heroKicker: "WEBSITES • SYSTEME • APPS", heroWord1: "DIGITAL", heroWord2: "ZUM", heroWord3: "MERKEN.", heroIntro: "Ich entwickle maßgeschneiderte Websites, Systeme und Apps ohne komplizierte Abläufe. Sie erklären Ihre Idee und ich kümmere mich um den gesamten Prozess bis zur Übergabe.", heroOnline: "Online-Betreuung für Kunden in Brasilien und überall auf der Welt.", heroSignature: "NEXCODE SYSTEMS", heroBottom: "Websites, Systeme und Apps mit", heroBottomStrong: "Präsenz, Leistung und Präzision.", ctaServices: "Leistungen ansehen", ctaProjects: "Meine Projekte", ctaReferences: "Referenzen ansehen", ctaIdea: "Meine Idee teilen", railPortfolio: "PORTFOLIO", railWhat: "MEIN ANGEBOT", railProcess: "SO FUNKTIONIERT ES", railSelection: "AUSWAHL", railFeedback: "KUNDENSTIMME", railQuestions: "FRAGEN", railContact: "KONTAKT", presenceEyebrow: "PRÄSENZ, DIE FUNKTIONIERT", introTitle: "Design und Code für Unternehmen, die nicht übersehen werden wollen.", introStatement: "Jedes Projekt beginnt mit einem klaren Ziel und endet mit einer Erfahrung, die sich natürlich anfühlt — und im Gedächtnis bleibt.", specialty1Title: "Websites und digitale Präsenz", specialty1Desc: "Um Marke, Leistungen und Produkte klar und professionell zu präsentieren.", specialty1a: "Portfolio-Website", specialty1b: "E-Commerce-Erstellung", specialty1c: "Digitale Speisekarte", specialty1d: "Online-Shop", specialty2Title: "Automatisierung und Verbindungen", specialty2Desc: "Um Kunden näher zu sein, wiederkehrende Aufgaben zu reduzieren und Tools zu verbinden.", specialty2a: "Traffic-Management", specialty2b: "Automatisierung (WhatsApp, Telegram)", specialty2c: "API-Integration", specialty3Title: "Management und Systeme", specialty3Desc: "Werkzeuge für Zahlen, Prozesse und klarere Entscheidungen.", specialty3a: "Finanzmanagement-Panel", specialty3b: "Administratives und Management-Dashboard", specialty3c: "Individuelle Systeme und Apps", processEyebrow: "OHNE KOMPLIKATIONEN", processTitle: "VON IHRER IDEE ZUM FERTIGEN PROJEKT.", step1Title: "Sie erzählen Ihre Idee", step1Desc: "Erklären Sie, was Sie brauchen, auch wenn Sie gerade erst anfangen.", step2Title: "Ich organisiere das Projekt", step2Desc: "Ich mache aus Ihrer Idee einen klaren Weg zur Umsetzung.", step3Title: "Sie verfolgen den Prozess", step3Desc: "Sie verfolgen jede Phase und entscheiden bei wichtigen Punkten mit.", step4Title: "Alles fertig", step4Desc: "Sie erhalten eine funktionierende, einsatzbereite Lösung.", selectionEyebrow: "AUSGEWÄHLTE PROJEKTE", projectsTitle: "Echte Projekte, einfach erklärt.", projectsIntro: "Wählen Sie ein Projekt, sehen Sie das Ergebnis und öffnen Sie die Website jederzeit.", projectLive: "LIVE-PROJEKT", viewProject: "Projekt ansehen", project1Category: "Professionelle Website", project1Desc: "Eine einfache Website, die den Salon präsentiert, Leistungen zeigt und den Kontakt erleichtert.", project2Category: "Individuelle Website", project2Desc: "Eine klare, elegante Website für Leistungen, Portfolio und einfache Buchungen.", project3Category: "Beauty- und Buchungswebsite", project3Desc: "Eine hochwertige Erfahrung für Leistungen, Marke und einfachere Online-Termine.", realReference: "ECHTE KUNDENSTIMME · MARA HAIR", feedbackTitle: "Was eine Kundin nach dem Projekt gesagt hat.", quote: "„Ich bin sehr glücklich mit Ihrer Arbeit“", maraCaption: "Nach der Übergabe erhaltene Nachricht · Mara Hair", daniCaption: "Feedback zum Projekt · Dani Caye Beauty", cibellyCaption: "Feedback zum Projekt · Cibelly Studio", questionsEyebrow: "VOR DEM START", faqTitle: "Häufige Fragen, einfache Antworten.", faq1q: "Muss ich Technik verstehen?", faq1a: "Nein. Sie erklären nur, was Sie möchten; ich kümmere mich um die Technik.", faq2q: "Muss ich Texte und Bilder fertig haben?", faq2a: "Nicht unbedingt. Wir ordnen das Vorhandene und legen gemeinsam fest, was noch fehlt.", faq3q: "Wie funktioniert die Begleitung?", faq3a: "Sie verfolgen jede Phase mit klaren Erklärungen und bestätigen wichtige Entscheidungen.", faq4q: "Arbeiten Sie mit anderen Ländern?", faq4a: "Ja. Ich arbeite online mit Kunden in Brasilien und überall auf der Welt.", faq5q: "Wie funktioniert das Angebot?", faq5a: "Sie erzählen Ihre Idee und ich erstelle ein klares, individuelles Angebot.", contactEyebrow: "WENN DIE IDEE ZÄHLT, ZÄHLT AUCH DIE AUSFÜHRUNG.", contactTitle: "Lassen Sie uns etwas schaffen, das Ihre Marke gerne unterschreibt.", contactDesc: "Sie müssen nicht mit allem fertig sein. Erzählen Sie mir von Ihrem Unternehmen und ich helfe, Ihre Idee in eine professionelle Lösung zu verwandeln.", contactCta: "Meine Idee über WhatsApp erklären", footerServices: "Websites · Systeme · Apps", footerBuilt: "Mit Präzision gebaut.", brandAlt: "Geometrisches Markensymbol", avatarAlt: "Stilisierter 3D-Kopf des Entwicklers", contactAlt: "Abstrakte Skulptur ineinandergreifender Ringe", maraAlt: "Screenshot eines WhatsApp-Gesprächs mit Mara Hair", daniAlt: "Screenshot eines WhatsApp-Gesprächs mit Dani Caye Beauty", cibellyAlt: "Screenshot von Sprachnachrichten und Feedback von Cibelly",
   },
 };
@@ -76,10 +171,17 @@ const WHATSAPP_MESSAGES: Record<LanguageCode, string> = {
   de: "🇧🇷 Olá! Gostaria de saber mais sobre seus serviços de criação de sites, sistemas e aplicativos. Podemos conversar?\n\n🇺🇸 Hello! I'd like to know more about your website, system, and app development services. Can we talk?",
 };
 
+// Projetos verificáveis: as versões sem URL pública confirmada abrem detalhes locais.
 const projectData = [
-  { number: "01", title: "Shine Brazilian Salon", categoryKey: "project1Category", descriptionKey: "project1Desc", image: "/assets/shine-editorial-material.png", url: "https://www.shinebraziliansalon.com.au", palette: "sand" },
-  { number: "02", title: "Dani Caye Beauty", categoryKey: "project2Category", descriptionKey: "project2Desc", image: "/assets/dani-editorial-material.png", url: "https://www.danicayebeauty.com/", palette: "rose" },
-  { number: "03", title: "Cibelly Studio", categoryKey: "project3Category", descriptionKey: "project3Desc", image: "/assets/cibelly-cover-hero.webp", url: "https://cibellystudi-dxsgadjg.manus.space", palette: "clay" },
+  { number: "01", title: "Shine Brazilian Salon", categoryKey: "project1Category", descriptionKey: "project1Desc", image: "/assets/shine-editorial-material.png", url: "https://www.shinebraziliansalon.com.au", palette: "sand", statusKey: "projectLive" },
+  { number: "02", title: "Dani Caye Beauty", categoryKey: "project2Category", descriptionKey: "project2Desc", image: "/assets/dani-editorial-material.png", url: "https://www.danicayebeauty.com/", palette: "rose", statusKey: "projectLive" },
+  { number: "03", title: "Cibelly Studio", categoryKey: "project3Category", descriptionKey: "project3Desc", image: "/assets/cibelly-cover-hero.webp", url: "https://cibellystudi-dxsgadjg.manus.space", palette: "clay", statusKey: "projectLive" },
+  { number: "04", title: "Bella Beauty Brazil", categoryKey: "project4Category", descriptionKey: "project4Desc", image: "/assets/project-bella-beauty-brazil.svg", url: "https://bella-beauty-brazil.vercel.app/", palette: "bella", statusKey: "projectLive" },
+  { number: "05", title: "Magic Hands Clinic", categoryKey: "project5Category", descriptionKey: "project5Desc", image: "/assets/project-magic-hands-clinic.svg", url: "https://depilaisclon-lnprgyga.manus.space/", palette: "magic", statusKey: "projectPreview" },
+  { number: "06", title: "ALL Integrative", categoryKey: "project6Category", descriptionKey: "project6Desc", image: "/assets/project-all-integrative.svg", url: "", palette: "sage", statusKey: "projectCode" },
+  { number: "07", title: "Studio Mariane Brito", categoryKey: "project7Category", descriptionKey: "project7Desc", image: "/assets/project-studio-mariane-brito.svg", url: "", palette: "mariane", statusKey: "projectCode" },
+  { number: "08", title: "InslandTour", categoryKey: "project8Category", descriptionKey: "project8Desc", image: "/assets/project-inslandtour.svg", url: "", palette: "travel", statusKey: "projectCode" },
+  { number: "09", title: "Gestão Multinichos", categoryKey: "project9Category", descriptionKey: "project9Desc", image: "/assets/project-appcrm.svg", url: "", palette: "crm", statusKey: "projectInDev" },
 ];
 
 const specialties = [
@@ -159,6 +261,7 @@ export default function Home() {
   const touchStart = useRef<{ x: number; y: number } | null>(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState<string | null>(null);
   const [language, setLanguage] = useState<LanguageCode>(() => {
     const saved = window.localStorage.getItem("nexcode-language") as LanguageCode | null;
     return saved && LANGUAGE_OPTIONS.some((option) => option.value === saved) ? saved : "pt-BR";
@@ -171,6 +274,7 @@ export default function Home() {
     category: t(project.categoryKey),
     description: t(project.descriptionKey),
   }));
+  const detailedProject = localizedProjects.find((project) => project.title === selectedProject);
   const localizedSpecialties = specialties.map((item) => ({
     ...item,
     title: t(item.titleKey),
@@ -182,6 +286,20 @@ export default function Home() {
     window.localStorage.setItem("nexcode-language", language);
     document.documentElement.lang = language;
   }, [language]);
+
+  useEffect(() => {
+    if (!selectedProject) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setSelectedProject(null);
+    };
+    window.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [selectedProject]);
 
   useEffect(() => {
     const onScroll = () => setShowBackToTop(window.scrollY > 520);
@@ -451,27 +569,35 @@ export default function Home() {
                 viewport={{ once: true, amount: 0.18 }}
                 transition={{ duration: 0.6, delay: index * 0.06, ease: [0.23, 1, 0.32, 1] }}
               >
-                <a className="project-visual" href={project.url} target="_blank" rel="noreferrer" aria-label={`Abrir ${project.title}`}>
-                  <div className="project-browser" aria-hidden="true">
-                    <div className="browser-chrome"><span /><span /><span /></div>
-                    <div className="project-screen">
-                      <img src={project.image} alt="" />
-                      <div className="screen-copy">
-                        <span>{project.number} / {t("projectLive")}</span>
-                        <strong>{project.title}</strong>
+                {project.url ? (
+                  <a className="project-visual" href={project.url} target="_blank" rel="noopener noreferrer" aria-label={`${t("viewProject")}: ${project.title}`}>
+                    <div className="project-browser" aria-hidden="true">
+                      <div className="browser-chrome"><span /><span /><span /></div>
+                      <div className="project-screen">
+                        <img src={project.image} alt="" loading="lazy" decoding="async" />
+                        <div className="screen-copy"><span>{project.number} / {t(project.statusKey)}</span><strong>{project.title}</strong></div>
                       </div>
                     </div>
-                  </div>
-                </a>
-                <div className="project-card-copy">
-                  <div className="project-card-meta">
-                    <span>{project.number}</span>
-                    <span>{project.category}</span>
-                  </div>
-                  <p className="project-description">{project.description}</p>
-                  <a className="project-card-link" href={project.url} target="_blank" rel="noreferrer">
-                    {t("viewProject")} <ArrowUpRight aria-hidden="true" />
                   </a>
+                ) : (
+                  <button type="button" className="project-visual project-visual-button" onClick={() => setSelectedProject(project.title)} aria-label={`${t("viewDetails")}: ${project.title}`}>
+                    <div className="project-browser" aria-hidden="true">
+                      <div className="browser-chrome"><span /><span /><span /></div>
+                      <div className="project-screen">
+                        <img src={project.image} alt="" loading="lazy" decoding="async" />
+                        <div className="screen-copy"><span>{project.number} / {t(project.statusKey)}</span><strong>{project.title}</strong></div>
+                      </div>
+                    </div>
+                  </button>
+                )}
+                <div className="project-card-copy">
+                  <div className="project-card-meta"><span>{project.number}</span><span>{project.category}</span></div>
+                  <p className="project-description">{project.description}</p>
+                  {project.url ? (
+                    <a className="project-card-link" href={project.url} target="_blank" rel="noopener noreferrer">{t("viewProject")} <ArrowUpRight aria-hidden="true" /></a>
+                  ) : (
+                    <button type="button" className="project-card-link" onClick={() => setSelectedProject(project.title)}>{t("viewDetails")} <ArrowUpRight aria-hidden="true" /></button>
+                  )}
                 </div>
               </motion.article>
             ))}
@@ -567,6 +693,20 @@ export default function Home() {
         <ArrowUp aria-hidden="true" />
         <span>Topo</span>
       </button>
+      {detailedProject && (
+        <div className="project-modal-backdrop" onMouseDown={(event) => { if (event.target === event.currentTarget) setSelectedProject(null); }}>
+          <div className="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+            <button type="button" className="project-modal-close" aria-label={t("closeDetails")} onClick={() => setSelectedProject(null)}><X aria-hidden="true" /></button>
+            <img src={detailedProject.image} alt="" />
+            <div className="project-modal-body">
+              <span className="project-modal-status">{t(detailedProject.statusKey)} · {detailedProject.category}</span>
+              <h2 id="project-modal-title">{detailedProject.title}</h2>
+              <p>{detailedProject.description}</p>
+              <small>{t("repoNoLink")}</small>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

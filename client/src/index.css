@@ -343,3 +343,18 @@ button, a { -webkit-tap-highlight-color: transparent; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
   .avatar-track { transform: none !important; }
 }
+
+/* Projetos sem URL pública verificada: card e modal de detalhes */
+.project-visual-button { width:100%; padding:0; border:0; text-align:left; background:transparent; cursor:pointer; font:inherit; }
+button.project-card-link { border:0; cursor:pointer; }
+.project-visual:focus-visible, .project-card-link:focus-visible { outline:2px solid #e3f9eb; outline-offset:-2px; }
+.project-modal-backdrop { position:fixed; z-index:120; inset:0; display:flex; align-items:center; justify-content:center; padding:22px; background:rgba(6,22,18,.84); backdrop-filter:blur(10px); }
+.project-modal { background:#f6f4ec; color:#20352c; width:min(95vw,640px); max-height:min(90vh,820px); overflow-y:auto; position:relative; box-shadow:0 24px 80px rgba(0,0,0,.3); }
+.project-modal > img { width:100%; display:block; aspect-ratio:1.7; object-fit:cover; }
+.project-modal-body { padding:clamp(20px,4vw,36px); }
+.project-modal-body h2 { color:#213b30; font-family:Georgia,serif; letter-spacing:-.05em; font-size:clamp(2rem,4vw,3rem); line-height:1; margin:10px 0 16px; }
+.project-modal-body p { color:#3c5147; font-size:16px; line-height:1.6; }
+.project-modal-body small { display:block; margin-top:20px; padding-top:14px; border-top:1px solid #bfc9c1; color:#597065; line-height:1.5; }
+.project-modal-status { font:700 11px/1.4 'Archivo',sans-serif; text-transform:uppercase; letter-spacing:.09em; }
+.project-modal-close { cursor:pointer; border:0; background:#203a30; color:white; position:absolute; right:12px; top:12px; width:38px; height:38px; display:flex; align-items:center; justify-content:center; }
+.project-modal-close svg { width:19px; height:19px; }
