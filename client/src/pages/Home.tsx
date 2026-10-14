@@ -605,11 +605,7 @@ export default function Home() {
         </section>
 
         <section id="depoimento" className="feedback-section" aria-labelledby="feedback-title">
-          <div className="section-rail" aria-hidden="true">
-            <span>05</span>
-            <i />
-            <span>{t("railFeedback")}</span>
-          </div>
+          <div className="section-rail" aria-hidden="true"><span>05</span><i /><span>{t("railFeedback")}</span></div>
           <motion.div className="feedback-layout reference-layout" {...fadeUp}>
             <div>
               <p className="eyebrow">{t("realReference")}</p>
@@ -619,18 +615,36 @@ export default function Home() {
               <blockquote>{t("quote")}</blockquote>
               <figcaption><span>—</span> Mara Hair</figcaption>
             </figure>
-            <div className="reference-media">
-              <figure className="reference-shot">
-                <img src="/assets/reference-mara-hair.png" alt={t("maraAlt")} />
-                <figcaption>{t("maraCaption")}</figcaption>
+            <div className="reference-media" aria-label="Cinco feedbacks reais de clientes, sem duplicatas">
+              <figure className="reference-shot" key="Daniana · Austrália">
+                <a href="/assets/feedback-daniana.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Ampliar feedback de Daniana · Austrália">
+                  <img src="/assets/feedback-daniana.jpeg" alt="Print de feedback enviado por Daniana · Austrália sobre um projeto da Nexcode Systems" loading="lazy" decoding="async" />
+                </a>
+                <figcaption>Daniana · Austrália</figcaption>
               </figure>
-              <figure className="reference-shot">
-                <img src="/assets/IMG_4264.PNG" alt={t("daniAlt")} />
-                <figcaption>{t("daniCaption")}</figcaption>
+              <figure className="reference-shot" key="Mara Hair">
+                <a href="/assets/feedback-mara-hair.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Ampliar feedback de Mara Hair">
+                  <img src="/assets/feedback-mara-hair.jpeg" alt="Print de feedback enviado por Mara Hair sobre um projeto da Nexcode Systems" loading="lazy" decoding="async" />
+                </a>
+                <figcaption>Mara Hair</figcaption>
               </figure>
-              <figure className="reference-shot">
-                <img src="/assets/IMG_4525.PNG" alt={t("cibellyAlt")} />
-                <figcaption>{t("cibellyCaption")}</figcaption>
+              <figure className="reference-shot" key="Cibelly Studio">
+                <a href="/assets/feedback-cibelly.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Ampliar feedback de Cibelly Studio">
+                  <img src="/assets/feedback-cibelly.jpeg" alt="Print de feedback enviado por Cibelly Studio sobre um projeto da Nexcode Systems" loading="lazy" decoding="async" />
+                </a>
+                <figcaption>Cibelly Studio</figcaption>
+              </figure>
+              <figure className="reference-shot" key="Marian Travel Experience">
+                <a href="/assets/feedback-marian-travel.webp" target="_blank" rel="noopener noreferrer" aria-label="Ampliar feedback de Marian Travel Experience">
+                  <img src="/assets/feedback-marian-travel.webp" alt="Print de feedback enviado por Marian Travel Experience sobre um projeto da Nexcode Systems" loading="lazy" decoding="async" />
+                </a>
+                <figcaption>Marian Travel Experience</figcaption>
+              </figure>
+              <figure className="reference-shot" key="Mariane Brito">
+                <a href="/assets/feedback-mariane-brito.webp" target="_blank" rel="noopener noreferrer" aria-label="Ampliar feedback de Mariane Brito">
+                  <img src="/assets/feedback-mariane-brito.webp" alt="Print de feedback enviado por Mariane Brito sobre um projeto da Nexcode Systems" loading="lazy" decoding="async" />
+                </a>
+                <figcaption>Mariane Brito</figcaption>
               </figure>
             </div>
           </motion.div>
