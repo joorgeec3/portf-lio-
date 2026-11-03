@@ -66,7 +66,13 @@ const homeSource = readFileSync(resolve(process.cwd(), "client/src/pages/Home.ts
     expect(homeSource).toContain("projectGroups.map");
     for (const group of ["beauty", "travel", "health"]) expect(homeSource).toContain(`group: "${group}"`);
     expect(homeSource).toContain("ProjectCoverImage");
-    expect(homeSource).toContain("preferLocal={project.coverMode === \"local\"}");
+    expect(homeSource).toContain('preferLocal={project.coverMode === "local"}');
+    expect(homeSource).toContain('coverPath={project.coverPath}');
+    for (const file of [
+      "project-hero-all-integrative.webp",
+      "project-hero-inslandtour.webp",
+      "project-hero-jarlene-chaves.webp",
+    ]) expect(homeSource).toContain(file);
     expect(homeSource).toContain('title: "Jarlene Chaves Beauty", group: "beauty"');
     expect(homeSource).toContain("/assets/project-jarlene-chaves.svg");
     const localCoverCount = (homeSource.match(/coverMode: "local"/g) ?? []).length;

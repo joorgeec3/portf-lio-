@@ -1,0 +1,35 @@
+name: Capture portfolio covers
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/capture-portfolio-covers.yml'
+      - '.github/portfolio-capture/**'
+
+permissions:
+  contents: write
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install capture tools
+        run: |
+          npm install --prefix .github/portfolio-capture --no-save --no-package-lock playwright sharp
+          .github/portfolio-capture/node_modules/.bin/playwright install --with-deps chromium
+      - name: Capture current website homepages
+        run: node .github/portfolio-capture/capture.mjs
+      - name: Commit images back to GitHub
+        run: |
+          git add client/public/assets/project-hero-all-integrative.webp client/public/assets/project-hero-inslandtour.webp client/public/assets/project-hero-jarlene-chaves.webp
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "assets(portfolio): capture website hero images"
+            git push origin HEAD:main
+          fi
