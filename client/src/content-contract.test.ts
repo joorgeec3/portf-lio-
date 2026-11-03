@@ -25,7 +25,9 @@ const homeSource = readFileSync(resolve(process.cwd(), "client/src/pages/Home.ts
     expect(homeSource).toContain("cibelly-cover-hero.webp");
     expect(homeSource).toContain("Ver projeto");
     expect(homeSource).toContain("Criação de Sites Portfólio");
-    expect(homeSource).toContain("Gestor de tráfego");
+    expect(homeSource).toContain("Gestão de tráfego pago");
+    expect(homeSource).toContain("Criação de lojas virtuais");
+    expect(homeSource).toContain("Atendimento inteligente com IA");
     expect(homeSource).toContain("Automação (WhatsApp, Telegram)");
     expect(homeSource).toContain("Dashboard Administrativo e Gerencial");
   });
@@ -60,6 +62,9 @@ const homeSource = readFileSync(resolve(process.cwd(), "client/src/pages/Home.ts
     expect(homeSource).not.toContain("Gestão Multinichos");
     expect(homeSource).not.toContain("project-appcrm.svg");
     expect(homeSource).toContain("image.thum.io/get/noanimate");
+    expect(homeSource).toContain("s0.wp.com/mshots/v1");
+    expect(homeSource).toContain("projectGroups.map");
+    for (const group of ["beauty", "travel", "health"]) expect(homeSource).toContain(`group: "${group}"`);
     expect(homeSource).toContain("ProjectCoverImage");
   });
 
