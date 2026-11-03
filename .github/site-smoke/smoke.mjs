@@ -44,7 +44,24 @@ try {
         await menu.click();
         if (await menu.getAttribute("aria-expanded") !== "true") throw new Error("Menu failed to open");
         const nav = page.locator("#mobile-navigation");
-        if (!(await nav.isVisible())) throw new Error("Opened menu not visible");
+        try {
+          await nav.waitFor({ state: "visible", timeout: 1500 });
+        } catch {
+          const details = await nav.evaluate((node) => ({
+            classes: node.className,
+            ariaHidden: node.getAttribute("aria-hidden"),
+            inert: node.hasAttribute("inert"),
+            computed: {
+              display: getComputedStyle(node).display,
+              visibility: getComputedStyle(node).visibility,
+              opacity: getComputedStyle(node).opacity,
+              position: getComputedStyle(node).position,
+              transform: getComputedStyle(node).transform,
+            },
+            bounding: node.getBoundingClientRect().toJSON(),
+          }));
+          throw new Error("Opened menu not visible: " + JSON.stringify(details));
+        }
         await nav.locator('a[href="#projetos"]').click();
         if (await menu.getAttribute("aria-expanded") !== "false") throw new Error("Menu did not close on navigation");
       } else if (await menu.isVisible()) {
