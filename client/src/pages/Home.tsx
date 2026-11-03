@@ -616,11 +616,11 @@ export default function Home() {
               <figcaption><span>—</span> Mara Hair</figcaption>
             </figure>
             <div className="reference-media" aria-label="Cinco feedbacks reais de clientes, sem duplicatas">
-              <figure className="reference-shot" key="Daniana · Austrália">
-                <a href="/assets/feedback-daniana.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Ampliar feedback de Daniana · Austrália">
-                  <img src="/assets/feedback-daniana.jpeg" alt="Print de feedback enviado por Daniana · Austrália sobre um projeto da Nexcode Systems" loading="lazy" decoding="async" />
+              <figure className="reference-shot" key="Dani Caye Beauty">
+                <a href="/assets/feedback-daniana.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Ampliar feedback de Dani Caye Beauty">
+                  <img src="/assets/feedback-daniana.jpeg" alt="Print de feedback enviado por Dani Caye Beauty sobre um projeto da Nexcode Systems" loading="lazy" decoding="async" />
                 </a>
-                <figcaption>Daniana · Austrália</figcaption>
+                <figcaption>Dani Caye Beauty</figcaption>
               </figure>
               <figure className="reference-shot" key="Mara Hair">
                 <a href="/assets/feedback-mara-hair.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Ampliar feedback de Mara Hair">
