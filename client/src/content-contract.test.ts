@@ -44,4 +44,23 @@ const homeSource = readFileSync(resolve(process.cwd(), "client/src/pages/Home.ts
     expect(homeSource).toContain("language-picker");
     expect(homeSource).not.toMatch(/MOVA PARA INTERAGIR|DESLIZE PARA MOVIMENTAR|LIVE PROJECT/i);
   });
+  it("exibe onze projetos sem Gestão Multinichos e mostra prévias em tela de computador", () => {
+    const cards = homeSource.match(/number: "\d{2}", title:/g) ?? [];
+    expect(cards).toHaveLength(11);
+    for (const url of [
+      "https://marianespa-crcp32cn.manus.space/",
+      "https://mariantrip-ynjer5ku.manus.space/",
+      "https://jarlene-chaves-beauty.vercel.app/",
+      "https://hair-brazil-extensions-two.vercel.app/",
+      "https://site-sheila-wjra.vercel.app",
+      "https://www.allintegrative.site/",
+    ]) {
+      expect(homeSource).toContain(url);
+    }
+    expect(homeSource).not.toContain("Gestão Multinichos");
+    expect(homeSource).not.toContain("project-appcrm.svg");
+    expect(homeSource).toContain("image.thum.io/get/noanimate");
+    expect(homeSource).toContain("ProjectCoverImage");
+  });
+
 });

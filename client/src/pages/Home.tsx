@@ -42,8 +42,12 @@ const COPY: Record<LanguageCode, Copy> = {
     project7Desc: "Site do Studio Mariane Brito, em Lisboa, com massagens, tratamentos e informações de agendamento.",
     project8Category: "Plataforma de turismo e reservas",
     project8Desc: "Projeto InslandTour de destinos, passeios, transportes e experiências em Morro de São Paulo e Boipeba.",
-    project9Category: "Sistema de gestão e CRM",
-    project9Desc: "Plataforma de CRM e finanças para diferentes nichos, em desenvolvimento por etapas.",
+    project9Category: "Site de turismo e experiências",
+    project9Desc: "Site da Marian Travel Experience para apresentar viagens, experiências e formas de contato.",
+    project10Category: "Site profissional de beleza",
+    project10Desc: "Site da Jarlene Chaves Beauty para apresentar a marca, os serviços e o contato.",
+    project11Category: "Site de extensões capilares",
+    project11Desc: "Site da Hair Brazil Extensions para apresentar a marca, os serviços e as formas de contato.",
     projectPreview: "PRÉVIA ONLINE",
     projectCode: "PROJETO NO GITHUB",
     projectInDev: "EM DESENVOLVIMENTO",
@@ -81,8 +85,12 @@ const COPY: Record<LanguageCode, Copy> = {
     project7Desc: "Site do Studio Mariane Brito, em Lisboa, com massagens, tratamentos e informações para marcações.",
     project8Category: "Plataforma de turismo e reservas",
     project8Desc: "Projeto InslandTour com destinos, passeios e transportes em Morro de São Paulo e Boipeba.",
-    project9Category: "Sistema de gestão e CRM",
-    project9Desc: "Plataforma de CRM e finanças multissetorial, em desenvolvimento por etapas.",
+    project9Category: "Site de turismo e experiências",
+    project9Desc: "Site da Marian Travel Experience para apresentar viagens, experiências e contactos.",
+    project10Category: "Site profissional de beleza",
+    project10Desc: "Site da Jarlene Chaves Beauty para apresentar a marca, os serviços e os contactos.",
+    project11Category: "Site de extensões de cabelo",
+    project11Desc: "Site da Hair Brazil Extensions para apresentar a marca, os serviços e os contactos.",
     projectPreview: "PRÉ-VISUALIZAÇÃO ONLINE",
     projectCode: "PROJETO NO GITHUB",
     projectInDev: "EM DESENVOLVIMENTO",
@@ -106,8 +114,12 @@ const COPY: Record<LanguageCode, Copy> = {
     project7Desc: "Studio Mariane Brito website in Lisbon, with massages, treatments and booking information.",
     project8Category: "Tourism and booking platform",
     project8Desc: "InslandTour project featuring destinations, trips and transport in Morro de São Paulo and Boipeba.",
-    project9Category: "Management and CRM system",
-    project9Desc: "Multi-industry CRM and financial management platform, currently under development.",
+    project9Category: "Travel and experiences website",
+    project9Desc: "Marian Travel Experience website showcasing travel services, experiences and ways to get in touch.",
+    project10Category: "Beauty services website",
+    project10Desc: "Jarlene Chaves Beauty website presenting the brand, services and contact information.",
+    project11Category: "Hair extensions website",
+    project11Desc: "Hair Brazil Extensions website presenting the brand, services and contact information.",
     projectPreview: "ONLINE PREVIEW",
     projectCode: "GITHUB PROJECT",
     projectInDev: "IN DEVELOPMENT",
@@ -128,8 +140,12 @@ const COPY: Record<LanguageCode, Copy> = {
     project7Desc: "Site du Studio Mariane Brito à Lisbonne, avec massages, soins et réservations.",
     project8Category: "Plateforme de tourisme et réservations",
     project8Desc: "Projet InslandTour de destinations et excursions à Morro de São Paulo et Boipeba.",
-    project9Category: "Système de gestion et CRM",
-    project9Desc: "Plateforme multi-activité de gestion des clients et des finances, en développement.",
+    project9Category: "Site de voyages et expériences",
+    project9Desc: "Site de Marian Travel Experience présentant des voyages, des expériences et les moyens de contact.",
+    project10Category: "Site de beauté",
+    project10Desc: "Site de Jarlene Chaves Beauty présentant la marque, les prestations et les contacts.",
+    project11Category: "Site d'extensions capillaires",
+    project11Desc: "Site de Hair Brazil Extensions présentant la marque, les prestations et les contacts.",
     projectPreview: "APERÇU EN LIGNE",
     projectCode: "PROJET SUR GITHUB",
     projectInDev: "EN DÉVELOPPEMENT",
@@ -150,8 +166,12 @@ const COPY: Record<LanguageCode, Copy> = {
     project7Desc: "Website des Studio Mariane Brito in Lissabon mit Massagen, Behandlungen und Buchungsinfos.",
     project8Category: "Tourismus- und Buchungsplattform",
     project8Desc: "InslandTour Projekt mit Ausflügen, Transport und Reisezielen rund um Morro de São Paulo und Boipeba.",
-    project9Category: "Management- und CRM-System",
-    project9Desc: "Branchenübergreifende Plattform für CRM und Finanzen, derzeit in Entwicklung.",
+    project9Category: "Website für Reisen und Erlebnisse",
+    project9Desc: "Website von Marian Travel Experience mit Reisen, Erlebnissen und Kontaktmöglichkeiten.",
+    project10Category: "Website für Beauty-Dienstleistungen",
+    project10Desc: "Website von Jarlene Chaves Beauty mit Marke, Leistungen und Kontaktmöglichkeiten.",
+    project11Category: "Website für Haarverlängerungen",
+    project11Desc: "Website von Hair Brazil Extensions mit Marke, Leistungen und Kontaktmöglichkeiten.",
     projectPreview: "ONLINE-VORSCHAU",
     projectCode: "GITHUB-PROJEKT",
     projectInDev: "IN ENTWICKLUNG",
@@ -179,9 +199,11 @@ const projectData = [
   { number: "04", title: "Bella Beauty Brazil", categoryKey: "project4Category", descriptionKey: "project4Desc", image: "/assets/project-bella-beauty-brazil.svg", url: "https://bella-beauty-brazil.vercel.app/", palette: "bella", statusKey: "projectLive" },
   { number: "05", title: "Magic Hands Clinic", categoryKey: "project5Category", descriptionKey: "project5Desc", image: "/assets/project-magic-hands-clinic.svg", url: "https://site-sheila-wjra.vercel.app", palette: "magic", statusKey: "projectPreview" },
   { number: "06", title: "ALL Integrative", categoryKey: "project6Category", descriptionKey: "project6Desc", image: "/assets/project-all-integrative.svg", url: "https://www.allintegrative.site/", palette: "sage", statusKey: "projectLive" },
-  { number: "07", title: "Studio Mariane Brito", categoryKey: "project7Category", descriptionKey: "project7Desc", image: "/assets/project-studio-mariane-brito.svg", url: "", palette: "mariane", statusKey: "projectCode" },
+  { number: "07", title: "Studio Mariane Brito", categoryKey: "project7Category", descriptionKey: "project7Desc", image: "/assets/project-studio-mariane-brito.svg", url: "https://marianespa-crcp32cn.manus.space/", palette: "mariane", statusKey: "projectLive" },
   { number: "08", title: "InslandTour", categoryKey: "project8Category", descriptionKey: "project8Desc", image: "/assets/project-inslandtour.svg", url: "https://fuzzy-friend-connect.lovable.app", palette: "travel", statusKey: "projectPreview" },
-  { number: "09", title: "Gestão Multinichos", categoryKey: "project9Category", descriptionKey: "project9Desc", image: "/assets/project-appcrm.svg", url: "", palette: "crm", statusKey: "projectInDev" },
+  { number: "09", title: "Marian Travel Experience", categoryKey: "project9Category", descriptionKey: "project9Desc", image: "/assets/project-preview-placeholder.svg", url: "https://mariantrip-ynjer5ku.manus.space/", palette: "travel", statusKey: "projectLive" },
+  { number: "10", title: "Jarlene Chaves Beauty", categoryKey: "project10Category", descriptionKey: "project10Desc", image: "/assets/project-preview-placeholder.svg", url: "https://jarlene-chaves-beauty.vercel.app/", palette: "rose", statusKey: "projectLive" },
+  { number: "11", title: "Hair Brazil Extensions", categoryKey: "project11Category", descriptionKey: "project11Desc", image: "/assets/project-preview-placeholder.svg", url: "https://hair-brazil-extensions-two.vercel.app/", palette: "sand", statusKey: "projectLive" },
 ];
 
 const specialties = [
@@ -254,6 +276,13 @@ function useAvatarTracking() {
   };
 
   return { avatarRef, setTrackingPoint, resetTracking };
+}
+
+// Mostra uma captura da página inicial e usa uma imagem local se a captura não carregar.
+function ProjectCoverImage({ url, fallback }: { url: string; fallback: string }) {
+  const [failed, setFailed] = useState(false);
+  const screenshot = url ? `https://image.thum.io/get/noanimate/width/960/crop/810/maxAge/168/${url}` : fallback;
+  return <img src={failed ? fallback : screenshot} alt="" loading="lazy" decoding="async" onError={() => setFailed(true)} />;
 }
 
 export default function Home() {
@@ -574,7 +603,7 @@ export default function Home() {
                     <div className="project-browser" aria-hidden="true">
                       <div className="browser-chrome"><span /><span /><span /></div>
                       <div className="project-screen">
-                        <img src={project.image} alt="" loading="lazy" decoding="async" />
+                        <ProjectCoverImage url={project.url} fallback={project.image} />
                         <div className="screen-copy"><span>{project.number} / {t(project.statusKey)}</span><strong>{project.title}</strong></div>
                       </div>
                     </div>
@@ -584,7 +613,7 @@ export default function Home() {
                     <div className="project-browser" aria-hidden="true">
                       <div className="browser-chrome"><span /><span /><span /></div>
                       <div className="project-screen">
-                        <img src={project.image} alt="" loading="lazy" decoding="async" />
+                        <ProjectCoverImage url={project.url} fallback={project.image} />
                         <div className="screen-copy"><span>{project.number} / {t(project.statusKey)}</span><strong>{project.title}</strong></div>
                       </div>
                     </div>
