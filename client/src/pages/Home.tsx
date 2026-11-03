@@ -309,25 +309,51 @@ function useAvatarTracking() {
 
 // Mostra uma captura da página inicial e usa uma imagem local se a captura não carregar.
 function ProjectCoverImage({ url, fallback, preferLocal = false, coverPath }: { url: string; fallback: string; preferLocal?: boolean; coverPath?: string }) {
-  const [attempt, setAttempt] = useState(0);
-  // Capturas fixas têm prioridade; se ainda não foram geradas, mantém a capa local anterior.
-  const sources = preferLocal
-    ? (coverPath ? [coverPath, fallback] : [fallback])
-    : url
-      ? [
-          `https://s0.wp.com/mshots/v1/${encodeURIComponent(url)}?w=960`,
-          `https://image.thum.io/get/noanimate/width/960/crop/700/maxAge/48/${url}`,
-          fallback,
-        ]
-      : [fallback];
+  // Começa sempre com uma imagem local para evitar telas vazias enquanto a prévia carrega.
+  const [activeSource, setActiveSource] = useState(coverPath || fallback);
+
+  useEffect(() => {
+    let cancelled = false;
+    const localSource = preferLocal ? (coverPath || fallback) : fallback;
+    setActiveSource(localSource);
+    if (preferLocal || !url) return;
+
+    const previews = [
+      `https://s0.wp.com/mshots/v1/${encodeURIComponent(url)}?w=960`,
+      `https://image.thum.io/get/noanimate/width/960/crop/700/maxAge/48/${url}`,
+    ];
+    let index = 0;
+    let pendingImage: HTMLImageElement | null = null;
+    const tryNextPreview = () => {
+      if (cancelled || index >= previews.length) return;
+      const nextUrl = previews[index++];
+      pendingImage = new window.Image();
+      pendingImage.onload = () => {
+        if (!cancelled) setActiveSource(nextUrl);
+      };
+      pendingImage.onerror = tryNextPreview;
+      pendingImage.src = nextUrl;
+    };
+    tryNextPreview();
+
+    return () => {
+      cancelled = true;
+      if (pendingImage) {
+        pendingImage.onload = null;
+        pendingImage.onerror = null;
+      }
+    };
+  }, [url, fallback, coverPath, preferLocal]);
 
   return (
     <img
-      src={sources[Math.min(attempt, sources.length - 1)]}
+      src={activeSource}
       alt=""
       loading="lazy"
       decoding="async"
-      onError={() => setAttempt((index) => Math.min(index + 1, sources.length - 1))}
+      onError={() => {
+        if (activeSource !== fallback) setActiveSource(fallback);
+      }}
     />
   );
 }
@@ -793,7 +819,7 @@ export default function Home() {
         <p>© {new Date().getFullYear()} — {t("footerBuilt")}</p>
       </footer>
 
-      <div className="floating-socials" aria-label="Redes sociais da Nexcode Systems">
+      <div className="floating-socials" role="group" aria-label="Redes sociais da Nexcode Systems">
         <a
           className="floating-instagram"
           href={INSTAGRAM_URL}

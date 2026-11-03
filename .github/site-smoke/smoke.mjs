@@ -68,6 +68,10 @@ try {
         throw new Error("Mobile menu should be hidden on desktop");
       }
       await page.locator(".project-card").first().scrollIntoViewIfNeeded();
+      await page.waitForFunction(() => {
+        const firstImage = document.querySelector(".project-card img");
+        return firstImage instanceof HTMLImageElement && firstImage.complete && firstImage.naturalWidth > 0;
+      }, null, { timeout: 8000 });
       const firstCard = await page.locator(".project-card").first().boundingBox();
       if (!firstCard || firstCard.width < 150) throw new Error("Project card collapsed");
       await page.screenshot({ path: `responsive-screenshots/${size.name}.png`, fullPage: false });
