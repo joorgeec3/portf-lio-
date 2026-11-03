@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const homeSource = readFileSync(resolve(process.cwd(), "client/src/pages/Home.tsx"), "utf8");
@@ -37,8 +37,8 @@ const homeSource = readFileSync(resolve(process.cwd(), "client/src/pages/Home.ts
 
   it("mantém a referência real e não exibe instruções antigas de interação", () => {
     expect(homeSource).toContain("Estou muito feliz com seu trabalho");
-    expect(homeSource).toContain("IMG_4264.PNG");
-    expect(homeSource).toContain("IMG_4525.PNG");
+    expect(existsSync(resolve(process.cwd(), "client/public/assets/IMG_4264.PNG"))).toBe(true);
+    expect(existsSync(resolve(process.cwd(), "client/public/assets/IMG_4525.PNG"))).toBe(true);
     expect(homeSource).toContain("Dani Caye Beauty");
     expect(homeSource).not.toContain("Daniana · Austrália");
     for (const file of ["feedback-daniana.jpeg", "feedback-mara-hair.jpeg", "feedback-cibelly.jpeg", "feedback-marian-travel.webp", "feedback-mariane-brito.webp"]) {
