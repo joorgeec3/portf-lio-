@@ -25,6 +25,14 @@ try {
       await page.locator("h1#hero-title").waitFor({ state: "visible" });
       const socials = page.locator(".floating-socials a");
       if (await socials.count() !== 2) throw new Error("Expected Instagram and WhatsApp buttons");
+      const logo = page.locator(".site-header .brand-symbol");
+      if (!(await logo.getAttribute("src"))?.includes("nexcode-n-mark.svg")) throw new Error("Wrong branding symbol");
+      await logo.evaluate(async (image) => {
+        if (!image.complete) await new Promise((resolve) => image.addEventListener("load", resolve, { once: true }));
+        if (image.naturalWidth < 50) throw new Error("Branding logo did not load");
+      });
+      const theme = await page.evaluate(() => getComputedStyle(document.documentElement).getPropertyValue("--mineral").trim());
+      if (theme !== "#090909") throw new Error("Brand palette not monochrome: " + theme);
       const ig = page.locator(".floating-instagram");
       if (!(await ig.getAttribute("href"))?.includes("instagram.com/nexcode_systems")) throw new Error("Wrong Instagram link");
       for (const selector of [".floating-instagram", ".floating-whatsapp"]) {

@@ -3,6 +3,8 @@ import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const homeSource = readFileSync(resolve(process.cwd(), "client/src/pages/Home.tsx"), "utf8");
+const siteCss = readFileSync(resolve(process.cwd(), "client/src/index.css"), "utf8");
+const indexHtml = readFileSync(resolve(process.cwd(), "client/index.html"), "utf8");
 
  describe("contrato de conteúdo do portfólio", () => {
   it("mantém as mensagens comerciais e as seções solicitadas", () => {
@@ -81,6 +83,18 @@ const homeSource = readFileSync(resolve(process.cwd(), "client/src/pages/Home.ts
     expect(homeSource).toContain("/assets/project-jarlene-chaves.svg");
     const localCoverCount = (homeSource.match(/coverMode: "local"/g) ?? []).length;
     expect(localCoverCount).toBe(3);
+  });
+
+  it("mantém a nova identidade preta e branca e utiliza apenas o N como símbolo", () => {
+    expect(homeSource.match(/\/assets\/nexcode-n-mark\.svg/g)).toHaveLength(2);
+    expect(indexHtml).toContain("/assets/nexcode-n-favicon.svg");
+    expect(existsSync(resolve(process.cwd(), "client/public/assets/nexcode-n-mark.svg"))).toBe(true);
+    expect(existsSync(resolve(process.cwd(), "client/public/assets/nexcode-n-favicon.svg"))).toBe(true);
+    expect(siteCss).toContain("--mineral: #090909;");
+    expect(siteCss).toContain("--chalk: #ffffff;");
+    expect(siteCss).toContain(".floating-instagram { background: #111111; }");
+    expect(siteCss).not.toContain("#173c36");
+    expect(siteCss).not.toContain("#3c5548");
   });
 
 });

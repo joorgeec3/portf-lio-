@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Nexcode">
+  <rect width="100" height="100" rx="16" fill="#ffffff"/>
+  <g fill="#050505" transform="translate(7 7) scale(.86)">
+    <path d="M5 3 H29 L94 97 H68 Z"/>
+    <path d="M6 22 L24 45 V73 L6 95 Z"/>
+    <path d="M72 23 L94 2 V84 L72 51 Z"/>
+  </g>
+</svg>

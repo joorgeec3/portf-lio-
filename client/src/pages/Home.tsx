@@ -461,7 +461,7 @@ export default function Home() {
       <header className={`site-header ${menuOpen ? "menu-is-open" : ""}`} aria-label={t("navContact")}>
         <a className="brand-lockup" href="#inicio" aria-label="Ir para o início" onClick={() => setMenuOpen(false)}>
           <img
-            src="/assets/brand-mark-mineral.png"
+            src="/assets/nexcode-n-mark.svg"
             alt={t("brandAlt")}
             className="brand-symbol"
           />
@@ -812,7 +812,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <a className="brand-lockup" href="#inicio" aria-label="Voltar ao início">
-          <img src="/assets/brand-mark-mineral.png" alt="" className="brand-symbol" />
+          <img src="/assets/nexcode-n-mark.svg" alt="" className="brand-symbol" />
           <span className="brand-wordmark">NEXCODE</span>
         </a>
         <p>{t("footerServices")}</p>
