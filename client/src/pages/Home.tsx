@@ -213,17 +213,17 @@ const WHATSAPP_MESSAGES: Record<LanguageCode, string> = {
 
 // Projetos verificáveis: as versões sem URL pública confirmada abrem detalhes locais.
 const projectData = [
-  { number: "01", title: "Shine Brazilian Salon", group: "beauty", categoryKey: "project1Category", descriptionKey: "project1Desc", image: "/assets/shine-editorial-material.png", url: "https://www.shinebraziliansalon.com.au", palette: "sand", statusKey: "projectLive" },
-  { number: "02", title: "Dani Caye Beauty", group: "beauty", categoryKey: "project2Category", descriptionKey: "project2Desc", image: "/assets/dani-editorial-material.png", url: "https://www.danicayebeauty.com/", palette: "rose", statusKey: "projectLive" },
-  { number: "03", title: "Cibelly Studio", group: "beauty", categoryKey: "project3Category", descriptionKey: "project3Desc", image: "/assets/cibelly-cover-hero.webp", url: "https://cibellystudi-dxsgadjg.manus.space", palette: "clay", statusKey: "projectLive" },
-  { number: "04", title: "Bella Beauty Brazil", group: "beauty", categoryKey: "project4Category", descriptionKey: "project4Desc", image: "/assets/project-bella-beauty-brazil.svg", url: "https://bella-beauty-brazil.vercel.app/", palette: "bella", statusKey: "projectLive" },
-  { number: "05", title: "Magic Hands Clinic", group: "beauty", categoryKey: "project5Category", descriptionKey: "project5Desc", image: "/assets/project-magic-hands-clinic.svg", url: "https://site-sheila-wjra.vercel.app", palette: "magic", statusKey: "projectPreview" },
-  { number: "06", title: "ALL Integrative", group: "health", categoryKey: "project6Category", descriptionKey: "project6Desc", image: "/assets/project-all-integrative.svg", url: "https://www.allintegrative.site/", palette: "sage", statusKey: "projectLive" },
-  { number: "07", title: "Studio Mariane Brito", group: "beauty", categoryKey: "project7Category", descriptionKey: "project7Desc", image: "/assets/project-studio-mariane-brito.svg", url: "https://marianespa-crcp32cn.manus.space/", palette: "mariane", statusKey: "projectLive" },
-  { number: "08", title: "InslandTour", group: "travel", categoryKey: "project8Category", descriptionKey: "project8Desc", image: "/assets/project-inslandtour.svg", url: "https://fuzzy-friend-connect.lovable.app", palette: "travel", statusKey: "projectPreview" },
-  { number: "09", title: "Marian Travel Experience", group: "travel", categoryKey: "project9Category", descriptionKey: "project9Desc", image: "/assets/project-preview-placeholder.svg", url: "https://mariantrip-ynjer5ku.manus.space/", palette: "travel", statusKey: "projectLive" },
-  { number: "10", title: "Jarlene Chaves Beauty", group: "beauty", categoryKey: "project10Category", descriptionKey: "project10Desc", image: "/assets/project-preview-placeholder.svg", url: "https://jarlene-chaves-beauty.vercel.app/", palette: "rose", statusKey: "projectLive" },
-  { number: "11", title: "Hair Brazil Extensions", group: "beauty", categoryKey: "project11Category", descriptionKey: "project11Desc", image: "/assets/project-preview-placeholder.svg", url: "https://hair-brazil-extensions-two.vercel.app/", palette: "sand", statusKey: "projectLive" },
+  { number: "01", title: "Shine Brazilian Salon", group: "beauty", categoryKey: "project1Category", descriptionKey: "project1Desc", image: "/assets/shine-editorial-material.png", url: "https://www.shinebraziliansalon.com.au", palette: "sand", statusKey: "projectLiv, coverMode: "remote" } },
+  { number: "02", title: "Dani Caye Beauty", group: "beauty", categoryKey: "project2Category", descriptionKey: "project2Desc", image: "/assets/dani-editorial-material.png", url: "https://www.danicayebeauty.com/", palette: "rose", statusKey: "projectLiv, coverMode: "remote" } },
+  { number: "03", title: "Cibelly Studio", group: "beauty", categoryKey: "project3Category", descriptionKey: "project3Desc", image: "/assets/cibelly-cover-hero.webp", url: "https://cibellystudi-dxsgadjg.manus.space", palette: "clay", statusKey: "projectLiv, coverMode: "remote" } },
+  { number: "04", title: "Bella Beauty Brazil", group: "beauty", categoryKey: "project4Category", descriptionKey: "project4Desc", image: "/assets/project-bella-beauty-brazil.svg", url: "https://bella-beauty-brazil.vercel.app/", palette: "bella", statusKey: "projectLiv, coverMode: "remote" } },
+  { number: "05", title: "Magic Hands Clinic", group: "beauty", categoryKey: "project5Category", descriptionKey: "project5Desc", image: "/assets/project-magic-hands-clinic.svg", url: "https://site-sheila-wjra.vercel.app", palette: "magic", statusKey: "projectPrevie, coverMode: "remote" } },
+  { number: "06", title: "ALL Integrative", group: "health", categoryKey: "project6Category", descriptionKey: "project6Desc", image: "/assets/project-all-integrative.svg", url: "https://www.allintegrative.site/", palette: "sage", statusKey: "projectLiv, coverMode: "local" } },
+  { number: "07", title: "Studio Mariane Brito", group: "beauty", categoryKey: "project7Category", descriptionKey: "project7Desc", image: "/assets/project-studio-mariane-brito.svg", url: "https://marianespa-crcp32cn.manus.space/", palette: "mariane", statusKey: "projectLiv, coverMode: "remote" } },
+  { number: "08", title: "InslandTour", group: "travel", categoryKey: "project8Category", descriptionKey: "project8Desc", image: "/assets/project-inslandtour.svg", url: "https://fuzzy-friend-connect.lovable.app", palette: "travel", statusKey: "projectPrevie, coverMode: "local" } },
+  { number: "09", title: "Marian Travel Experience", group: "travel", categoryKey: "project9Category", descriptionKey: "project9Desc", image: "/assets/project-preview-placeholder.svg", url: "https://mariantrip-ynjer5ku.manus.space/", palette: "travel", statusKey: "projectLiv, coverMode: "remote" } },
+  { number: "10", title: "Jarlene Chaves Beauty", group: "beauty", categoryKey: "project10Category", descriptionKey: "project10Desc", image: "/assets/project-jarlene-chaves.svg", url: "https://jarlene-chaves-beauty.vercel.app/", palette: "rose", statusKey: "projectLiv, coverMode: "local" } },
+  { number: "11", title: "Hair Brazil Extensions", group: "beauty", categoryKey: "project11Category", descriptionKey: "project11Desc", image: "/assets/project-preview-placeholder.svg", url: "https://hair-brazil-extensions-two.vercel.app/", palette: "sand", statusKey: "projectLiv, coverMode: "remote" } },
 ];
 
 const projectGroups = [
@@ -305,9 +305,11 @@ function useAvatarTracking() {
 }
 
 // Mostra uma captura da página inicial e usa uma imagem local se a captura não carregar.
-function ProjectCoverImage({ url, fallback }: { url: string; fallback: string }) {
+function ProjectCoverImage({ url, fallback, preferLocal = false }: { url: string; fallback: string; preferLocal?: boolean }) {
   const [attempt, setAttempt] = useState(0);
-  const sources = url
+  // O mshots às vezes retorna o logótipo do WordPress como uma imagem válida.
+  // Nesse caso não dispara onError, por isso estes projetos usam a capa local.
+  const sources = url && !preferLocal
     ? [
         `https://s0.wp.com/mshots/v1/${encodeURIComponent(url)}?w=960`,
         `https://image.thum.io/get/noanimate/width/960/crop/700/maxAge/48/${url}`,
@@ -645,21 +647,18 @@ export default function Home() {
                   <span>{String(localizedProjects.filter((project) => project.group === group.key).length).padStart(2, "0")}</span>
                 </div>
                 <div className="project-list">
-                  {localizedProjects.filter((project) => project.group === group.key).map((project, index) => (
+                  {localizedProjects.filter((project) => project.group === group.key).map((project) => (
               <motion.article
                 className={`project-card project-${project.palette}`}
                 key={project.title}
-                initial={{ opacity: 0, y: 28 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.18 }}
-                transition={{ duration: 0.6, delay: index * 0.06, ease: [0.23, 1, 0.32, 1] }}
+                transition={{ duration: 0.6, ease: [0.23, 1, 0.32, 1] }}
               >
                 {project.url ? (
                   <a className="project-visual" href={project.url} target="_blank" rel="noopener noreferrer" aria-label={`${t("viewProject")}: ${project.title}`}>
                     <div className="project-browser" aria-hidden="true">
                       <div className="browser-chrome"><span /><span /><span /></div>
                       <div className="project-screen">
-                        <ProjectCoverImage url={project.url} fallback={project.image} />
+                        <ProjectCoverImage url={project.url} fallback={project.image} preferLocal={project.coverMode === "local"} />
                         <div className="screen-copy"><span>{project.number} / {t(project.statusKey)}</span><strong>{project.title}</strong></div>
                       </div>
                     </div>
@@ -669,7 +668,7 @@ export default function Home() {
                     <div className="project-browser" aria-hidden="true">
                       <div className="browser-chrome"><span /><span /><span /></div>
                       <div className="project-screen">
-                        <ProjectCoverImage url={project.url} fallback={project.image} />
+                        <ProjectCoverImage url={project.url} fallback={project.image} preferLocal={project.coverMode === "local"} />
                         <div className="screen-copy"><span>{project.number} / {t(project.statusKey)}</span><strong>{project.title}</strong></div>
                       </div>
                     </div>
