@@ -400,9 +400,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .project-screen { background: linear-gradient(120deg, #e7e7e7, #bcbcbc); }
 .floating-whatsapp { background: #ffffff; color: #101010; border-color: #101010; }
 .floating-whatsapp:hover { background: #e5e5e5; }
-.project-card-link:hover, .project-category-link:hover { color: #0b0b0b; }
-.project-category-link:hover { background: #ffffff; }
-.project-category-link:hover span { color: #444444; }
+.project-card-link:hover { color: #0b0b0b; }
+.project-category-link:hover { background: rgba(255,255,255,.12); border-color: #ffffff; color: #ffffff; }
+.project-category-link:hover span { color: #ffffff; }
 @media (max-width: 1100px) { .brand-symbol { height: 30px; width: 30px; } }
 /* Projetos sem URL pública verificada: card e modal de detalhes */
 .project-visual-button { width:100%; padding:0; border:0; text-align:left; background:transparent; cursor:pointer; font:inherit; }
