@@ -47,7 +47,8 @@ const homeSource = readFileSync(resolve(process.cwd(), "client/src/pages/Home.ts
     expect(homeSource).toContain("Cibelly Studio");
     expect(homeSource).toContain("mobile-navigation");
     expect(homeSource).toContain("language-picker");
-    expect(homeSource).not.toMatch(/MOVA PARA INTERAGIR|DESLIZE PARA MOVIMENTAR|LIVE PROJECT/i);
+    expect(homeSource).not.toMatch(/MOVA PARA INTERAGIR|DESLIZE PARA MOVIMENTAR/i);
+    expect(homeSource).toContain('projectLive: "LIVE PROJECT"');
   });
   it("exibe onze projetos sem Gestão Multinichos e mostra prévias em tela de computador", () => {
     const cards = homeSource.match(/number: "\d{2}", title:/g) ?? [];
