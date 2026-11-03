@@ -53,11 +53,11 @@ try {
       await page.locator(".project-card").first().scrollIntoViewIfNeeded();
       const firstCard = await page.locator(".project-card").first().boundingBox();
       if (!firstCard || firstCard.width < 150) throw new Error("Project card collapsed");
-      await page.screenshot({ path: \`responsive-screenshots/\${size.name}.png\`, fullPage: false });
+      await page.screenshot({ path: `responsive-screenshots/${size.name}.png`, fullPage: false });
       console.log("PASS", size.name, JSON.stringify(widths), "firstCardWidth", Math.round(firstCard.width));
     } catch (error) {
       errors.push(size.name + ": " + String(error));
-      await page.screenshot({ path: \`responsive-screenshots/\${size.name}-failed.png\` }).catch(() => {});
+      await page.screenshot({ path: `responsive-screenshots/${size.name}-failed.png` }).catch(() => {});
     } finally {
       await page.close();
     }
