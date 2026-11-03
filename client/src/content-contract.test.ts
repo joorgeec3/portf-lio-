@@ -14,7 +14,7 @@ const homeSource = readFileSync(resolve(process.cwd(), "client/src/pages/Home.ts
     expect(homeSource).toContain("Francês");
     expect(homeSource).toContain("Alemão");
     expect(homeSource).toContain("Ver serviços");
-    expect(homeSource).toContain("Ver referências");
+    expect(homeSource).toContain("Ver feedbacks");
     expect(homeSource).toContain('href="#depoimento"');
     expect(homeSource).toContain('href="#como-funciona"');
     expect(homeSource).toContain("DA SUA IDEIA AO PROJETO PRONTO.");
@@ -35,6 +35,10 @@ const homeSource = readFileSync(resolve(process.cwd(), "client/src/pages/Home.ts
     expect(homeSource).toContain("IMG_4264.PNG");
     expect(homeSource).toContain("IMG_4525.PNG");
     expect(homeSource).toContain("Dani Caye Beauty");
+    expect(homeSource).not.toContain("Daniana · Austrália");
+    for (const file of ["feedback-daniana.jpeg", "feedback-mara-hair.jpeg", "feedback-cibelly.jpeg", "feedback-marian-travel.webp", "feedback-mariane-brito.webp"]) {
+      expect(homeSource).toContain(file);
+    }
     expect(homeSource).toContain("Cibelly Studio");
     expect(homeSource).toContain("mobile-navigation");
     expect(homeSource).toContain("language-picker");
