@@ -28,6 +28,9 @@ const homeSource = readFileSync(resolve(process.cwd(), "client/src/pages/Home.ts
     expect(homeSource).toContain("Gestão de tráfego pago");
     expect(homeSource).toContain("Criação de lojas virtuais");
     expect(homeSource).toContain("Atendimento inteligente com IA");
+    expect(homeSource).toContain("https://www.instagram.com/nexcode_systems/");
+    expect(homeSource).toContain('className="floating-socials"');
+    expect(homeSource).toContain('className="floating-instagram"');
     expect(homeSource).toContain("Automação (WhatsApp, Telegram)");
     expect(homeSource).toContain("Dashboard Administrativo e Gerencial");
   });

@@ -11,6 +11,7 @@ import {
   CircleArrowDown,
   Code2,
   Layers3,
+  Instagram,
   MessageCircle,
   Menu,
   MoveDownRight,
@@ -212,6 +213,8 @@ const WHATSAPP_MESSAGES: Record<LanguageCode, string> = {
 };
 
 // Projetos verificáveis: as versões sem URL pública confirmada abrem detalhes locais.
+const INSTAGRAM_URL = "https://www.instagram.com/nexcode_systems/";
+
 const projectData = [
   { number: "01", title: "Shine Brazilian Salon", group: "beauty", categoryKey: "project1Category", descriptionKey: "project1Desc", image: "/assets/shine-editorial-material.png", url: "https://www.shinebraziliansalon.com.au", palette: "sand", statusKey: "projectLive", coverMode: "remote" },
   { number: "02", title: "Dani Caye Beauty", group: "beauty", categoryKey: "project2Category", descriptionKey: "project2Desc", image: "/assets/dani-editorial-material.png", url: "https://www.danicayebeauty.com/", palette: "rose", statusKey: "projectLive", coverMode: "remote" },
@@ -382,22 +385,29 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    document.documentElement.lang = language;
-  }, [language]);
-
-  useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") setMenuOpen(false);
     };
 
     document.addEventListener("keydown", onKeyDown);
-    document.body.style.overflow = menuOpen ? "hidden" : "";
+    const oldOverflow = document.body.style.overflow;
+    if (menuOpen) document.body.style.overflow = "hidden";
 
     return () => {
       document.removeEventListener("keydown", onKeyDown);
-      document.body.style.overflow = "";
+      if (menuOpen) document.body.style.overflow = oldOverflow;
     };
   }, [menuOpen]);
+
+
+  useEffect(() => {
+    const desktopLayout = window.matchMedia("(min-width: 1101px)");
+    const closeMenuOnDesktop = () => {
+      if (desktopLayout.matches) setMenuOpen(false);
+    };
+    desktopLayout.addEventListener("change", closeMenuOnDesktop);
+    return () => desktopLayout.removeEventListener("change", closeMenuOnDesktop);
+  }, []);
 
   const onTouchStart = (event: React.TouchEvent<HTMLElement>) => {
     const touch = event.touches[0];
@@ -458,7 +468,7 @@ export default function Home() {
         >
           {menuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
         </button>
-        <nav id="mobile-navigation" className={`mobile-menu ${menuOpen ? "is-open" : ""}`} aria-label="Navegação móvel">
+        <nav id="mobile-navigation" className={`mobile-menu ${menuOpen ? "is-open" : ""}`} aria-label={t("navProjects")} aria-hidden={!menuOpen} inert={!menuOpen}>
           <a href="#especialidades" onClick={() => setMenuOpen(false)}>{t("navServices")}</a>
           <a href="#projetos" onClick={() => setMenuOpen(false)}>{t("navProjects")}</a>
           <a href="#depoimento" onClick={() => setMenuOpen(false)}>{t("mobileReferences")}</a>
@@ -783,13 +793,25 @@ export default function Home() {
         <p>© {new Date().getFullYear()} — {t("footerBuilt")}</p>
       </footer>
 
-      <a className="floating-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Conversar pelo WhatsApp">
-        <MessageCircle aria-hidden="true" />
-      </a>
+      <div className="floating-socials" aria-label="Redes sociais da Nexcode Systems">
+        <a
+          className="floating-instagram"
+          href={INSTAGRAM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Instagram · @nexcode_systems"
+          aria-label="Instagram da Nexcode Systems"
+        >
+          <Instagram aria-hidden="true" />
+        </a>
+        <a className="floating-whatsapp" href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="Conversar pelo WhatsApp">
+          <MessageCircle aria-hidden="true" />
+        </a>
+      </div>
       <button
         className={`back-to-top ${showBackToTop ? "is-visible" : ""}`}
         type="button"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        onClick={() => window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" })}
         aria-label="Subir ao topo"
       >
         <ArrowUp aria-hidden="true" />

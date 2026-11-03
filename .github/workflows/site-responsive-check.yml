@@ -1,0 +1,54 @@
+name: Site responsiveness check
+on:
+  push:
+    paths:
+      - 'client/src/**'
+      - '.github/site-smoke/**'
+      - '.github/workflows/site-responsive-check.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  responsive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.4.1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Validate TypeScript and content
+        run: |
+          pnpm run check
+          pnpm exec vitest run client/src/content-contract.test.ts
+      - name: Build the site
+        run: pnpm run build
+      - name: Install browser testing tools
+        run: |
+          npm install --prefix .github/site-smoke --no-save --no-package-lock playwright
+          .github/site-smoke/node_modules/.bin/playwright install --with-deps chromium
+      - name: Start local preview
+        run: |
+          pnpm run preview -- --host 127.0.0.1 --port 4173 > /tmp/nexcode-preview.log 2>&1 &
+          for i in $(seq 1 40); do
+            curl -fsS http://127.0.0.1:4173/ > /dev/null && exit 0
+            sleep 2
+          done
+          cat /tmp/nexcode-preview.log
+          exit 1
+      - name: Test mobile, tablet and desktop
+        run: node .github/site-smoke/smoke.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: responsive-screenshots
+          path: responsive-screenshots/
+          if-no-files-found: ignore
