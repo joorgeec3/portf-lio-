@@ -75,6 +75,9 @@ try {
       } else if (await menu.isVisible()) {
         throw new Error("Mobile menu should be hidden on desktop");
       }
+      const spaCard = page.locator(".project-card").filter({ hasText: "Le Jardin Spa" });
+      if (await spaCard.count() !== 1) throw new Error("Le Jardin Spa card missing or repeated");
+      if (!(await spaCard.locator('.project-card-link').getAttribute('href'))?.includes('www.lejardimspa.site/')) throw new Error("Le Jardin Spa link incorrect");
       await page.locator(".project-card").first().scrollIntoViewIfNeeded();
       await page.waitForFunction(() => {
         const firstImage = document.querySelector(".project-card img");

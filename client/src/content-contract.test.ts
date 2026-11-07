@@ -52,9 +52,9 @@ const indexHtml = readFileSync(resolve(process.cwd(), "client/index.html"), "utf
     expect(homeSource).not.toMatch(/MOVA PARA INTERAGIR|DESLIZE PARA MOVIMENTAR/i);
     expect(homeSource).toContain('projectLive: "LIVE PROJECT"');
   });
-  it("exibe onze projetos sem Gestão Multinichos e mostra prévias em tela de computador", () => {
+  it("exibe doze projetos sem Gestão Multinichos e mostra prévias em tela de computador", () => {
     const cards = homeSource.match(/number: "\d{2}", title:/g) ?? [];
-    expect(cards).toHaveLength(11);
+    expect(cards).toHaveLength(12);
     for (const url of [
       "https://marianespa-crcp32cn.manus.space/",
       "https://mariantrip-ynjer5ku.manus.space/",
@@ -62,6 +62,7 @@ const indexHtml = readFileSync(resolve(process.cwd(), "client/index.html"), "utf
       "https://hair-brazil-extensions-two.vercel.app/",
       "https://site-sheila-wjra.vercel.app",
       "https://www.allintegrative.site/",
+      "https://www.lejardimspa.site/",
     ]) {
       expect(homeSource).toContain(url);
     }
@@ -78,11 +79,15 @@ const indexHtml = readFileSync(resolve(process.cwd(), "client/index.html"), "utf
       "project-hero-all-integrative.webp",
       "project-hero-inslandtour.webp",
       "project-hero-jarlene-chaves.webp",
+      "project-hero-le-jardin-spa.webp",
     ]) expect(homeSource).toContain(file);
     expect(homeSource).toContain('title: "Jarlene Chaves Beauty", group: "beauty"');
     expect(homeSource).toContain("/assets/project-jarlene-chaves.svg");
     const localCoverCount = (homeSource.match(/coverMode: "local"/g) ?? []).length;
-    expect(localCoverCount).toBe(3);
+    expect(localCoverCount).toBe(4);
+    expect(homeSource).toContain('title: "Le Jardin Spa", group: "beauty"');
+    expect(existsSync(resolve(process.cwd(), "client/public/assets/project-le-jardin-spa.svg"))).toBe(true);
+    expect((homeSource.match(/project12Category:/g) ?? [])).toHaveLength(5);
   });
 
   it("mantém a nova identidade preta e branca e utiliza apenas o N como símbolo", () => {
