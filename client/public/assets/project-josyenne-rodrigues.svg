@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Josyenne Rodrigues Nails — imagem editorial de reserva">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f3e9e5"/><stop offset=".58" stop-color="#d7bfb9"/><stop offset="1" stop-color="#a98382"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#fff6f1" stop-opacity=".78"/><stop offset="1" stop-color="#c39895" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#bg)"/>
+<circle cx="985" cy="338" r="370" fill="url(#glow)"/>
+<path d="M875 800C948 625 923 435 1054 185M990 520c72-80 158-109 245-115" fill="none" stroke="#7e595c" opacity=".35" stroke-width="3"/>
+<path d="M0 690C310 565 520 755 750 610C975 470 1060 650 1200 512V800H0Z" fill="#fffaf7" opacity=".19"/>
+<rect x="64" y="58" width="1072" height="684" rx="10" fill="none" stroke="#72595a" stroke-opacity=".25"/>
+<text x="103" y="146" font-family="Arial, sans-serif" font-size="20" fill="#704d50" letter-spacing="6">NAIL DESIGNER · JACKSONVILLE, FL</text>
+<text x="96" y="335" font-family="Georgia, serif" font-size="92" fill="#432b31">Josyenne</text>
+<text x="96" y="435" font-family="Georgia, serif" font-size="92" font-style="italic" fill="#432b31">Rodrigues</text>
+<path d="M105 494H602" stroke="#77545a" stroke-width="3"/>
+<text x="105" y="562" font-family="Arial, sans-serif" font-size="25" letter-spacing="5" fill="#684950">NAILS · MANICURE · PEDICURE</text>
+<text x="105" y="704" font-family="Arial, sans-serif" font-size="16" fill="#785e61">Capa editorial de reserva</text>
+</svg>

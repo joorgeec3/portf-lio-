@@ -52,9 +52,9 @@ const indexHtml = readFileSync(resolve(process.cwd(), "client/index.html"), "utf
     expect(homeSource).not.toMatch(/MOVA PARA INTERAGIR|DESLIZE PARA MOVIMENTAR/i);
     expect(homeSource).toContain('projectLive: "LIVE PROJECT"');
   });
-  it("exibe doze projetos sem Gestão Multinichos e mostra prévias em tela de computador", () => {
+  it("exibe treze projetos sem Gestão Multinichos e mostra prévias em tela de computador", () => {
     const cards = homeSource.match(/number: "\d{2}", title:/g) ?? [];
-    expect(cards).toHaveLength(12);
+    expect(cards).toHaveLength(13);
     for (const url of [
       "https://marianespa-crcp32cn.manus.space/",
       "https://mariantrip-ynjer5ku.manus.space/",
@@ -63,6 +63,7 @@ const indexHtml = readFileSync(resolve(process.cwd(), "client/index.html"), "utf
       "https://site-sheila-wjra.vercel.app",
       "https://www.allintegrative.site/",
       "https://www.lejardimspa.site/",
+      "https://site-josy-two.vercel.app/",
     ]) {
       expect(homeSource).toContain(url);
     }
@@ -80,14 +81,18 @@ const indexHtml = readFileSync(resolve(process.cwd(), "client/index.html"), "utf
       "project-hero-inslandtour.webp",
       "project-hero-jarlene-chaves.webp",
       "project-hero-le-jardin-spa.webp",
+      "project-hero-josyenne.webp",
     ]) expect(homeSource).toContain(file);
     expect(homeSource).toContain('title: "Jarlene Chaves Beauty", group: "beauty"');
     expect(homeSource).toContain("/assets/project-jarlene-chaves.svg");
     const localCoverCount = (homeSource.match(/coverMode: "local"/g) ?? []).length;
-    expect(localCoverCount).toBe(4);
+    expect(localCoverCount).toBe(5);
     expect(homeSource).toContain('title: "Le Jardin Spa", group: "beauty"');
     expect(existsSync(resolve(process.cwd(), "client/public/assets/project-le-jardin-spa.svg"))).toBe(true);
     expect((homeSource.match(/project12Category:/g) ?? [])).toHaveLength(5);
+    expect((homeSource.match(/project13Category:/g) ?? [])).toHaveLength(5);
+    expect(homeSource).toContain('title: "Josyenne Rodrigues Nails", group: "beauty"');
+    expect(existsSync(resolve(process.cwd(), "client/public/assets/project-josyenne-rodrigues.svg"))).toBe(true);
   });
 
   it("mantém a nova identidade preta e branca e utiliza apenas o N como símbolo", () => {

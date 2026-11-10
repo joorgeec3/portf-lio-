@@ -75,6 +75,10 @@ try {
       } else if (await menu.isVisible()) {
         throw new Error("Mobile menu should be hidden on desktop");
       }
+      const josyCard = page.locator(".project-card").filter({ hasText: "Josyenne Rodrigues Nails" });
+      if (await josyCard.count() !== 1) throw new Error("Josyenne Rodrigues card missing or duplicated");
+      const josyUrl = await josyCard.locator(".project-card-link").getAttribute("href");
+      if (josyUrl !== "https://site-josy-two.vercel.app/") throw new Error("Josyenne website URL incorrect: " + josyUrl);
       const spaCard = page.locator(".project-card").filter({ hasText: "Le Jardin Spa" });
       if (await spaCard.count() !== 1) throw new Error("Le Jardin Spa card missing or repeated");
       if (!(await spaCard.locator('.project-card-link').getAttribute('href'))?.includes('www.lejardimspa.site/')) throw new Error("Le Jardin Spa link incorrect");
